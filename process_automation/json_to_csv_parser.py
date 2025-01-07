@@ -44,6 +44,7 @@ class Parser:
             
             rows.extend(row)
 
+        os.makedirs('csv', exist_ok=True)
         with open(os.path.join(base_dir, 'csv', f"{filename}.csv"), 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(headers)
