@@ -1,0 +1,96 @@
+Consider you are a Good Software Tester.
+
+I will give you following things:
+    1. Coding Question in MarkDown format.
+    2. Its solutions in four languages[C, C++, Java, Python].
+    3. Testcase for the question in markdown format.
+
+
+SOLUTION FORMAT:
+        {{
+            "c": {{
+                "solution_code": "#include <stdio.h>\n#include <stdlib.h>\n\nint cmpfunc(const void * a, const void * b) {{\n    return (*(int*)a - *(int*)b);\n}}\n \nvoid remove_duplicates(int arr[], int n, int result[], int *new_size) {{\n    qsort(arr, n, sizeof(int), cmpfunc);\n    result[0] = arr[0];\n    *new_size = 1;\n    for (int i = 1; i < n; i++) {{\n        if (arr[i] != arr[i-1]) {{\n            result[*new_size] = arr[i];\n            (*new_size)++;\n        }}\n    }}\n}}\n",
+                "backend_code": "#include <stdio.h>\n\n#ifndef FILE1_H\n#define FILE1_H\nvoid remove_duplicates(int[], int, int[], int *);\n#endif\n\nint main() {{\n    int n;\n    scanf(\"%d\", &n);\n    int arr[n];\n    for (int i = 0; i < n; i++) {{\n        scanf(\"%d\", &arr[i]);\n    }}\n    int result[n];\n    int new_size = 0;\n    remove_duplicates(arr, n, result, &new_size);\n    for (int i = 0; i < new_size; i++) {{\n        printf(\"%d \", result[i]);\n    }}\n    printf(\"\\n\");\n    return 0;\n}}\n",
+                "prefilled_code": "#include <stdio.h>\n#include <stdlib.h>\n\nint cmpfunc(const void * a, const void * b) {{\n    return (*(int*)a - *(int*)b);\n}}\n \nvoid remove_duplicates(int arr[], int n, int result[], int *new_size) {{\n    qsort(arr, n, sizeof(int), cmpfunc);\n    // Fill this function in\n}}\n"
+            }},
+            "cpp": {{
+                "solution_code": "#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> remove_duplicates(vector<int>& arr) {{\n    sort(arr.begin(), arr.end());\n    vector<int> result;\n    result.push_back(arr[0]);\n    for (size_t i = 1; i < arr.size(); i++) {{\n        if (arr[i] != arr[i-1]) {{\n            result.push_back(arr[i]);\n        }}\n    }}\n    return result;\n}}\n",
+                "backend_code": "#include <iostream>\n#include <vector>\n#include \"solution.h\"\n\nusing namespace std;\n\nint main() {{\n    int n;\n    cin >> n;\n    vector<int> arr(n);\n    for (int i = 0; i < n; i++) {{\n        cin >> arr[i];\n    }}\n    vector<int> result = remove_duplicates(arr);\n    for (int num : result) {{\n        cout << num << \" \";\n    }}\n    cout << endl;\n    return 0;\n}}\n",
+                "prefilled_code": "#include <bits/stdc++.h>\nusing namespace std;\n\n\nvector<int> remove_duplicates(vector<int>& arr){{\n\n}}\n"
+            }},
+            "java": {{
+                "solution_code": "import java.util.*;\n\nclass Solution {{\n    public List<Integer> removeDuplicates(List<Integer> arr) {{\n        Collections.sort(arr);\n        List<Integer> result = new ArrayList<>();\n        result.add(arr.get(0));\n        for (int i = 1; i < arr.size(); i++) {{\n            if (!arr.get(i).equals(arr.get(i-1))) {{\n                result.add(arr.get(i));\n            }}\n        }}\n        return result;\n    }}\n}}\n",
+                "backend_code": "import java.util.*;\n\npublic class Main {{\n    public static void main(String[] args) {{\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        List<Integer> arr = new ArrayList<>();\n        for (int i = 0; i < n; i++) {{\n            arr.add(scanner.nextInt());\n        }}\n        Solution solution = new Solution();\n        List<Integer> result = solution.removeDuplicates(arr);\n        for (int num : result) {{\n            System.out.print(num + \" \");\n        }}\n        System.out.println();\n        scanner.close();\n    }}\n}}\n",
+                "prefilled_code": "import java.util.*;\n\nclass Solution {{\n    public List<Integer> removeDuplicates(List<Integer> arr) {{\n        // Complete this function\n        return new ArrayList<>();\n    }}\n}}\n"
+            }},
+            "python": {{
+                "solution_code": "def remove_duplicates(arr):\n    arr.sort()\n    result = [arr[0]]\n    for i in range(1, len(arr)):\n        if arr[i] != arr[i - 1]:\n            result.append(arr[i])\n    return result\n",
+                "backend_code": "if __name__ == \"__main__\":\n    import sys\n    input = sys.stdin.read\n    data = input().strip().split()\n    n = int(data[0])\n    arr = list(map(int, data[1:]))\n    result = remove_duplicates(arr)\n    print(\" \".join(map(str, result)))\n",
+                "prefilled_code": "def remove_duplicates(arr):\n    # Fill this function in\n    pass"
+            }}
+        }}
+
+
+TESTCASE FORMAT:
+        [
+            {{
+                "input": "5\n1 2 3 4 5",
+                "output": "2 3 4 5 -1",
+                "testcase_type": "NORMAL_CASE"
+            }},
+            {{
+                "input": "4\n4 5 2 25",
+                "output": "5 25 25 -1",
+                "testcase_type": "NORMAL_CASE"
+            }},
+        ]
+
+
+YOUR TASKS
+NOTE: WHILE DOING CHECKS ON SOLUTION AND TESTCASES FORGOT ABOUT QUESTION.
+    INSTRUCTIONS:
+        1. Analyse the question and get clear understanding of the question.
+        2. Read and understand the solutions in each language.
+        3. Execute each testcase to all the four languages solution code.
+        4. If for a given input testcase
+            - All the solutions are giving same output then they are correct solution or else they identify which language code is not correct.
+            - If there outputs are different then identify the incorrect solution and correct it.
+        5. If solutions are correct then run code on same testcases and update given output with the output given by code if they are different.
+
+    NOTE 1: For each language you need to consider [solution_code] key and [backend_code] key.
+                - If backend_code is empty then consider only solution code.
+    NOTE 2: For each input consider "input" key and "output" key
+    NOTE 3: You need to do all the validation by yourself and give final results.
+    NOTE 4: Your response should be only the json given below. You are not expected to give code to do verifications. 
+
+Once you are done with validation, format your response in the json format given below.
+
+[IMPORTANT: IF TESTCASES CONTAINS ANY CODE AS PART OF INPUT OR OUTPUT THEN UPDATE TESTCASES AND ENSURE THEY ALLIGNS WITH THE GIVEN INPUT AND OUTPUT FORMAT.]
+IF TESTCASES ARE NOT ALLIGNING WITH THE QUESTION THEN UPDATED TESTCASES SO THAT THEY'LL BECOME VALID FOR THE QUESTION. THEN RUN VALIDATION CHECK. FINAL TRUE/FALSE SHOULD REPRESENT CORRECT SOLUTION OR INCORRECT SOLUTION NOT CORRECT OR INCORRECT TESTCASES.
+
+RESPONSE_FORMAT: if all solutions are valid
+{{
+    "result": "true",
+    "solutions": [FINAL SOLUTIONS JSON],
+    "testcases": [FINAL TESTCASES JSON]
+}}
+
+RESPONSE_FORMAT: if all solutions are in-valid
+{{
+    "result": "false",
+    "message": [Decribe here the reason of failure in verifications, make sure that cause will be clear to human readable],
+    "solutions": [FINAL SOLUTIONS JSON],
+    "testcases": [FINAL TESTCASES JSON]
+}}
+
+
+[IMPORTANT] Your responses should only contain the json without any backtick or any kind of formatting. It should be a single json string which can be parsed into json directly.
+
+!!!IMPORTANT NOTE: While giving final response make sure that you don't change testcase format or solutions format. Your ultimate aim is to guarantee that the final solutions are correct or not along with testcases.
+
+BELOW IS THE QUESTION:
+{QUESTION}
+BELOW IS THE SOLUTION IN JSON FORMAT
+{SOLUTIONS}
+BELOW IS THE TESTCASES IN JSON FORMAT
+{TESTCASES}

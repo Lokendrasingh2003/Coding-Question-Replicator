@@ -1,0 +1,83 @@
+INSTRUCTIONS:
+    - Generate 5 Variants for the given base coding question
+    - Add a Short Title consist of 2-3 words to each coding question
+    - Act as a Technical Instructional Designer and generate variants of coding questions that will include description, code and test cases for python
+
+    ```markdown
+    {QUESTION}
+    ```
+
+    - Analyze the base coding question:
+    - Generate variants similar to the base question:
+        - Keep the questions conceptually similar but make slight changes to the implementation or requirements.
+        - Maintain the same difficulty level as the base question.
+
+    - Instructions for ChatGPT:
+        - Do not change the difficulty level of the variant questions.
+        - Do not introduce any additional concepts apart from what is mentioned in the coding question.
+
+    The main objective of creating the variants is to reduce the plagiarism and copying among the students. So, each solution should not be easily identified that these questions are similar, yet maintaining the below guidelines.
+
+    Guidelines:
+
+    1. Question Description:
+        - Generate a unique description for each variant:
+        - Generate in markdown format. So check the spaces and alignments accordingly.
+        - Provide a brief introduction explaining what the task entails
+        - Ensure the problem statement is clear and simple.
+        - Add how to take the Input
+        - Add how to generate the Output
+        - Provide 2 Sample Inputs and corresponding 2 Sample Outputs
+        - Add Explanation for given Sample Inputs and Outputs
+        
+        DESCRIPTION OF CODING PRACTICE PROBLEM EXAMPLE:
+        
+            ```
+                Write a program that reads a number `N` and prints `N` Natural Numbers from **1**.
+            
+                <MultiLineNote>
+                All the positive numbers from **1** are called **Natural Numbers**.
+                </MultiLineNote>
+            
+                ---
+            
+                #### Input
+            
+                The input will be a single line containing an integer representing `N`.
+            
+                ---
+            
+                #### Output
+            
+                The output should contain `N` Natural Numbers from **1**, each on a new line.
+            
+                ---
+            
+                #### Explanation
+            
+                For example, if the given number is `N = 3`,
+            
+                * The **3** numbers from **1** are **1**, **2** and **3**.
+            
+                The output should be,
+            
+                ```
+                1
+                2
+                3
+                ```
+            ```
+    2. Once all the five replicas are ready, Return response in the json format given below.
+        JOSN FORMAT 
+        ```json
+            {{
+                "replica 1:" ["REPLICATED QUESTION IN MARKDOWN FORMAT HERE", "SHORT_TITLE"],
+                "replica 2:" ["REPLICATED QUESTION IN MARKDOWN FORMAT HERE", "SHORT_TITLE"],
+                "replica 3:" ["REPLICATED QUESTION IN MARKDOWN FORMAT HERE", "SHORT_TITLE"],
+                "replica 4:" ["REPLICATED QUESTION IN MARKDOWN FORMAT HERE", "SHORT_TITLE"],
+                "replica 5:" ["REPLICATED QUESTION IN MARKDOWN FORMAT HERE", "SHORT_TITLE"],
+            }}
+        ```
+    3. Make sure your response will be json string in the given format and which can be easily parsed to json object.
+    [IMPORTANT] Your responses should only contain the json without any backtick or any kind of formatting. It should be a single json string which can be parsed into json directly.
+    [IMPOATANT] Make sure that the SHORT_TITLE in your response json is same as you used in Question.
