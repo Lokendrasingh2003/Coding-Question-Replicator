@@ -11,9 +11,9 @@ To generate replicas, ensure you have the following:
 ## **Steps to Follow**
 
 ### **Step 1: Navigate to the Directory**
-- Go to the `replication_questions` directory.
+- Go to the `replication_questions` directory. If it is missing create one with the same name in root directory.
 
-### **Step 2: Create the Markdown File**
+### **Step 2: Create the Markdown File** 
 - Create a Markdown file in this directory and name it using the following convention:
 
 #### **File Naming Format**
@@ -41,7 +41,7 @@ Instead of manually creating the files, use the `question_file_creator.py` scrip
 ### **Step 4: Validate the Directory**
 - Ensure that:
   - No **unnecessary files** exist in the `replication_questions` directory.
-  - All filenames **follow the defined naming convention**.
+  - All file names **follow the defined naming convention**.
 
 ### **Step 5: Run the Main File**
 - Execute the main script to process the questions.
