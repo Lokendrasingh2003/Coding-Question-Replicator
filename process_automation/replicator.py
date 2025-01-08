@@ -39,6 +39,7 @@ class QuestionReplicator:
                 print("Validation Successful!")
                 return (validation_result, 'true')
             elif i+1 == retry_limit:
+                print(f"Validation Failed.\n [REASON]: {validation_result.get('message')}")
                 return (validation_result, 'false')
             else:
                 print(f"Validation Failed.\n [REASON]: {validation_result.get('message')}")

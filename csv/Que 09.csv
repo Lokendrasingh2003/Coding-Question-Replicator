@@ -1,0 +1,711 @@
+S. No,Difficulty,Question Content (in Markdown),Question_short_text,Sub_Topics,Code_language,Solution Code,Front_Code_language,Prefilled Code For Each Code Language,Test_case_input,Test_case_output,Test_case_type,Code_language,Backend Code,is_valid
+1,HARD,"### Toggle Switches
+
+In this task, there are `N` switches that are initially turned off. You first turn on all the switches, then turn off every second switch. On the third round, you toggle every third switch (turning on if it's off or turning off if it's on).
+
+For the `j`<sup>th</sup> round, you toggle every `j`<sup>th</sup> switch. For the `N`<sup>th</sup> round, you only toggle the last switch.
+
+Print the number of switches that are on after `N` rounds.
+
+---
+
+#### Input Format
+- A single integer `N`
+
+#### Output Format
+- A single integer representing the number of switches that are on after `N` rounds.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+
+---
+
+#### Sample Input 1
+```
+4
+```
+
+#### Sample Output 1
+```
+2
+```
+
+#### Explanation
+Let's take an example:
+
+```
+4
+```
+
+- At first, the four switches are `[off, off, off, off]`.
+- After the first round, the four switches are `[on, on, on, on]`.
+- After the second round, the four switches are `[on, off, on, off]`.
+- After the third round, the four switches are `[on, off, off, off]`.
+- After the fourth round, the four switches are `[on, off, off, on]`.
+- So you should print `2` because there are two switches that are on.
+
+---
+",Toggle Switches,DATA_TYPE_LIST,PYTHON,"N = int(input())
+count = 0
+
+for i in range(1, N + 1):
+    if i * i > N:
+        break
+    count += 1
+
+print(count)
+",PYTHON,"#Write your code here
+",,,,,,true
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int count = 0;
+        
+        for (int i = 1; i * i <= N; i++) {
+            count++;
+        }
+        
+        System.out.println(count);
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+ 
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}",1,1,NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    int count = 0;
+    
+    for (int i = 1; i * i <= N; i++) {
+        count++;
+    }
+    
+    cout << count << endl;
+    return 0;
+}
+",CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}",2,1,NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+
+int main() {
+    int N;
+    scanf(""%d"", &N);
+    int count = 0;
+    
+    for (int i = 1; i * i <= N; i++) {
+        count++;
+    }
+    
+    printf(""%d\n"", count);
+    return 0;
+}
+",C,"#include <stdio.h>
+
+int main()
+{
+     //Write your code here
+     return 0;
+}",3,1,NORMAL_CASE,,,
+,,,,,,,,,4,2,NORMAL_CASE,,,
+,,,,,,,,,5,2,NORMAL_CASE,,,
+,,,,,,,,,6,2,NORMAL_CASE,,,
+,,,,,,,,,7,2,NORMAL_CASE,,,
+,,,,,,,,,8,2,NORMAL_CASE,,,
+,,,,,,,,,9,3,NORMAL_CASE,,,
+,,,,,,,,,10,3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+2,HARD,"### Flipping Bulbs
+
+You have `N` bulbs that start in the off state. In each round, you apply a specific rule to toggle the bulbs. Initially, you turn on all the bulbs. In the second round, you turn off every second bulb. In the third round, you toggle every third bulb.
+
+For the `j`<sup>th</sup> round, you toggle every `j`<sup>th</sup> bulb. For the `N`<sup>th</sup> round, you toggle only the last bulb.
+
+Return the count of bulbs that remain on after `N` rounds.
+
+---
+
+#### Input Format
+- A single integer `N`
+
+#### Output Format
+- A single integer representing the number of bulbs that remain on after `N` rounds.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+
+---
+
+#### Sample Input 1
+```
+5
+```
+
+#### Sample Output 1
+```
+2
+```
+
+#### Explanation
+Let's take an example:
+
+```
+5
+```
+
+- At first, the five bulbs are `[off, off, off, off, off]`.
+- After the first round, the five bulbs are `[on, on, on, on, on]`.
+- After the second round, the five bulbs are `[on, off, on, off, on]`.
+- After the third round, the five bulbs are `[on, off, off, off, on]`.
+- After the fourth round, the five bulbs are `[on, off, off, on, on]`.
+- After the fifth round, the five bulbs are `[on, off, off, on, off]`.
+- So you should print `2` because there are two bulbs that are on.
+
+---
+",Flipping Bulbs,DATA_TYPE_LIST,PYTHON,"def countOnBulbs(N: int) -> int:
+    count = 0
+    for i in range(1, int(N**0.5) + 1):
+        count += 1
+    return count
+",PYTHON,"def countOnBulbs(N: int) -> int:
+    # Write your code here
+    pass",,,,PYTHON,"if __name__ == ""__main__"":
+    N = int(input())
+    result = countOnBulbs(N)
+    print(result)
+",true
+,,,,,JAVA,"public class Solution {
+    public int countOnBulbs(int N) {
+        int count = 0;
+        for(int i = 1; i * i <= N; ++i) {
+            count++;
+        }
+        return count;
+    }
+}",JAVA,"class Solution {
+    public int countOnBulbs(int N) {
+        // Write your code here
+    }
+}",5,2,NORMAL_CASE,JAVA,"import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Read input value
+        int N = scanner.nextInt();
+        
+        // Call the function and get the result
+        Solution solution = new Solution();
+        int result = solution.countOnBulbs(N);
+        
+        // Output the result
+        System.out.println(result);
+        
+        scanner.close();
+    }
+}",
+,,,,,CPP,"int countOnBulbs(int N) {
+    int count = 0;
+    for(int i = 1; i * i <= N; ++i) {
+        count++;
+    }
+    return count;
+}",CPP,"#include <bits/stdc++.h>
+using namespace std;
+
+int countOnBulbs(int N) {
+    // Write your code here
+}",1,1,NORMAL_CASE,CPP,"#include <iostream>
+#include ""solution.h""
+using namespace std;
+
+int main() {
+    int N;
+    
+    // Read input value
+    cin >> N;
+    
+    // Call the function and get the result
+    int result = countOnBulbs(N);
+    
+    // Output the result
+    cout << result << endl;
+    
+    return 0;
+}",
+,,,,,C,"int countOnBulbs(int N) {
+    int count = 0;
+    for(int i = 1; i * i <= N; ++i) {
+        count++;
+    }
+    return count;
+}",C,"#include <stdio.h>
+
+int countOnBulbs(int N) {
+    // Write your code here
+}",10,3,NORMAL_CASE,C,"#include <stdio.h>
+
+#ifndef FILE1_H
+#define FILE1_H
+int countOnBulbs(int N);
+#endif
+
+int main() {
+    int N;
+    
+    // Read input value
+    scanf(""%d"", &N);
+    
+    // Call the function and get the result
+    int result = countOnBulbs(N);
+    
+    // Output the result
+    printf(""%d\n"", result);
+    
+    return 0;
+}",
+,,,,,,,,,15,3,NORMAL_CASE,,,
+,,,,,,,,,20,4,NORMAL_CASE,,,
+,,,,,,,,,25,5,NORMAL_CASE,,,
+,,,,,,,,,7,2,NORMAL_CASE,,,
+,,,,,,,,,12,3,NORMAL_CASE,,,
+,,,,,,,,,30,5,NORMAL_CASE,,,
+,,,,,,,,,50,7,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+3,HARD,"### Toggle Lights
+
+Given `N` lights that are initially off, you perform several rounds of toggling them on or off based on specific rules. In the first round, you turn on all the lights. In the second round, you turn off every second light. In the third round, you toggle every third light.
+
+For the `j`<sup>th</sup> round, you toggle every `j`<sup>th</sup> light. For the `N`<sup>th</sup> round, you toggle only the last light.
+
+Determine how many lights are on after `N` rounds.
+
+---
+
+#### Input Format
+- A single integer `N`
+
+#### Output Format
+- A single integer representing the number of lights that are on after `N` rounds.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+
+---
+
+#### Sample Input 1
+```
+6
+```
+
+#### Sample Output 1
+```
+2
+```
+
+#### Explanation
+Let's take an example:
+
+```
+6
+```
+
+- At first, the six lights are `[off, off, off, off, off, off]`.
+- After the first round, the six lights are `[on, on, on, on, on, on]`.
+- After the second round, the six lights are `[on, off, on, off, on, off]`.
+- After the third round, the six lights are `[on, off, off, off, on, off]`.
+- After the fourth round, the six lights are `[on, off, off, on, on, off]`.
+- After the fifth round, the six lights are `[on, off, off, on, off, off]`.
+- After the sixth round, the six lights are `[on, off, off, on, off, on]`.
+- So you should print `2` because there are two lights that are on.
+
+---
+",Toggle Lights,DATA_TYPE_LIST,PYTHON,"import math
+
+N = int(input())
+count = 0
+for i in range(1, N + 1):
+    if math.isqrt(i) ** 2 == i:
+        count += 1
+print(count)
+",PYTHON,"# Write your code here
+",,,,,,true
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int count = 0;
+        for (int i = 1; i <= N; i++) {
+            if (Math.sqrt(i) == (int)Math.sqrt(i)) {
+                count++;
+            }
+        }
+        System.out.println(count);
+        scanner.close();n        }
+}
+",JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+",1,1,NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    int count = 0;
+    for (int i = 1; i <= N; i++) {
+        if (sqrt(i) == (int)sqrt(i)) {
+            count++;
+        }
+    }
+    cout << count << endl;
+    return 0;
+}
+",CPP,"#include <iostream>
+using namespace std;
+
+int main() {
+    // Write your code here
+    return 0;
+}",2,1,NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int N;
+    scanf(""%d"", &N);
+    int count = 0;
+    for (int i = 1; i <= N; i++) {
+        if (sqrt(i) == (int)sqrt(i)) {
+            count++;
+        }
+    }
+    printf(""%d\n"", count);
+    return 0;
+}
+",C,"#include <stdio.h>
+
+int main() {
+    // Write your code here
+    return 0;
+}",3,1,NORMAL_CASE,,,
+,,,,,,,,,4,2,NORMAL_CASE,,,
+,,,,,,,,,5,2,NORMAL_CASE,,,
+,,,,,,,,,6,2,NORMAL_CASE,,,
+,,,,,,,,,7,2,NORMAL_CASE,,,
+,,,,,,,,,8,2,NORMAL_CASE,,,
+,,,,,,,,,9,3,NORMAL_CASE,,,
+,,,,,,,,,10,3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+4,HARD,"### On-Off Lamps
+
+In this exercise, you have `N` lamps that are initially off. In a sequence of rounds, you toggle these lamps according to specific rules. Initially, you turn on all the lamps. In the second round, you turn off every second lamp. In the third round, you toggle every third lamp.
+
+For the `j`<sup>th</sup> round, you toggle every `j`<sup>th</sup> lamp. For the `N`<sup>th</sup> round, you toggle only the last lamp.
+
+Calculate the number of lamps that remain on after `N` rounds.
+
+---
+
+#### Input Format
+- A single integer `N`
+
+#### Output Format
+- A single integer representing the number of lamps that remain on after `N` rounds.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+
+---
+
+#### Sample Input 1
+```
+7
+```
+
+#### Sample Output 1
+```
+3
+```
+
+#### Explanation
+Let's take an example:
+
+```
+7
+```
+
+- At first, the seven lamps are `[off, off, off, off, off, off, off]`.
+- After the first round, the seven lamps are `[on, on, on, on, on, on, on]`.
+- After the second round, the seven lamps are `[on, off, on, off, on, off, on]`.
+- After the third round, the seven lamps are `[on, off, off, off, on, off, on]`.
+- After the fourth round, the seven lamps are `[on, off, off, on, on, off, on]`.
+- After the fifth round, the seven lamps are `[on, off, off, on, off, off, on]`.
+- After the sixth round, the seven lamps are `[on, off, off, on, off, on, on]`.
+- After the seventh round, the seven lamps are `[on, off, off, on, off, on, off]`.
+- So you should print `3` because there are three lamps that are on.
+
+---
+",On-Off Lamps,DATA_TYPE_LIST,PYTHON,"N = int(input())
+on_lamps = 0
+
+for i in range(1, int(N**0.5) + 1):
+    on_lamps += 1
+
+print(on_lamps)
+",PYTHON,"#Write your code here
+",,,,,,true
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int on_lamps = 0;
+        for (int i = 1; i * i <= N; i++) {
+            on_lamps++;
+        }
+        System.out.println(on_lamps);
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+ 
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}",1,1,VISIBLE_CASE,,,
+,,,,,CPP,"#include <iostream>
+using namespace std;
+
+int main(){
+    int N, on_lamps = 0;
+    cin >> N;
+    for (int i = 1; i * i <= N; i++) {
+        on_lamps++;
+    }
+    cout << on_lamps << endl;
+    return 0;
+}
+",CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}",2,1,VISIBLE_CASE,,,
+,,,,,C,"#include <stdio.h>
+
+int main() {
+    int N, on_lamps = 0;
+    scanf(""%d"", &N);
+    for (int i = 1; i * i <= N; i++) {
+        on_lamps++;
+    }
+    printf(""%d\n"", on_lamps);
+    return 0;
+}
+",C,"#include <stdio.h>
+
+int main()
+{
+     //Write your code here
+     return 0;
+}",3,1,NORMAL_CASE,,,
+,,,,,,,,,4,2,NORMAL_CASE,,,
+,,,,,,,,,5,2,NORMAL_CASE,,,
+,,,,,,,,,6,2,NORMAL_CASE,,,
+,,,,,,,,,7,2,NORMAL_CASE,,,
+,,,,,,,,,8,2,NORMAL_CASE,,,
+,,,,,,,,,9,3,NORMAL_CASE,,,
+,,,,,,,,,10,3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+5,HARD,"### Lamp Toggling
+
+You are given `N` lamps, initially turned off. You perform a number of rounds where you toggle the lamps based on certain rules. In the first round, all the lamps are turned on. In the second round, every second lamp is turned off. In the third round, every third lamp is toggled.
+
+For the `j`<sup>th</sup> round, every `j`<sup>th</sup> lamp is toggled. For the `N`<sup>th</sup> round, the last lamp is toggled.
+
+Find out how many lamps remain on after `N` rounds.
+
+---
+
+#### Input Format
+- A single integer `N`
+
+#### Output Format
+- A single integer representing the number of lamps that remain on after `N` rounds.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+
+---
+
+#### Sample Input 1
+```
+8
+```
+
+#### Sample Output 1
+```
+3
+```
+
+#### Explanation
+Let's take an example:
+
+```
+8
+```
+
+- At first, the eight lamps are `[off, off, off, off, off, off, off, off]`.
+- After the first round, the eight lamps are `[on, on, on, on, on, on, on, on]`.
+- After the second round, the eight lamps are `[on, off, on, off, on, off, on, off]`.
+- After the third round, the eight lamps are `[on, off, off, off, on, off, on, off]`.
+- After the fourth round, the eight lamps are `[on, off, off, on, on, off, on, off]`.
+- After the fifth round, the eight lamps are `[on, off, off, on, off, off, on, off]`.
+- After the sixth round, the eight lamps are `[on, off, off, on, off, on, on, off]`.
+- After the seventh round, the eight lamps are `[on, off, off, on, off, on, off, off]`.
+- After the eighth round, the eight lamps are `[on, off, off, on, off, on, off, on]`.
+- So you should print `3` because there are three lamps that are on.
+
+---
+",Lamp Toggling,DATA_TYPE_LIST,PYTHON,"def countLampsOn(N: int) -> int:
+    return int(N**0.5)
+",PYTHON,"def countLampsOn(N: int) -> int:
+    # Implement the function
+    pass
+",,,,PYTHON,"import sys
+from solution import countLampsOn
+
+def main():
+    N = int(input())
+    result = countLampsOn(N)
+    print(result)
+
+if __name__ == ""__main__"":
+    main()
+",true
+,,,,,JAVA,"public class Solution {
+    public int countLampsOn(int N) {
+        return (int) Math.sqrt(N);
+    }
+}
+",JAVA,"class Solution {
+    public int countLampsOn(int N) {
+        // Implement the function
+    }
+}
+",1,1,NORMAL_CASE,JAVA,"import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        Solution solution = new Solution();
+        int result = solution.countLampsOn(N);
+        System.out.println(result);
+        scanner.close();
+    }
+}
+",
+,,,,,CPP,"#include <cmath>
+
+int countLampsOn(int N) {
+    return (int)sqrt(N);
+}
+",CPP,"#include <cmath>
+
+int countLampsOn(int N) {
+    // Implement the function
+}
+",2,1,NORMAL_CASE,CPP,"#include <iostream>
+#include <cmath>
+using namespace std;
+
+int countLampsOn(int N);
+
+int main() {
+    int N;
+    cin >> N;
+    int result = countLampsOn(N);
+    cout << result << endl;
+    return 0;
+}
+",
+,,,,,C,"#include <stdio.h>
+#include <math.h>
+
+int countLampsOn(int N) {
+    return (int)sqrt(N);
+}
+",C,"#include <stdio.h>
+#include <math.h>
+
+int countLampsOn(int N) {
+    // Implement the function
+}
+",3,1,NORMAL_CASE,C,"#include <stdio.h>
+#include <math.h>
+
+#ifndef FILE1_H
+#define FILE1_H
+int countLampsOn(int N);
+#endif
+
+int main() {
+    int N;
+    scanf(""%d"", &N);
+    int result = countLampsOn(N);
+    printf(""%d\n"", result);
+    return 0;
+}
+",
+,,,,,,,,,4,2,NORMAL_CASE,,,
+,,,,,,,,,5,2,NORMAL_CASE,,,
+,,,,,,,,,6,2,NORMAL_CASE,,,
+,,,,,,,,,7,2,NORMAL_CASE,,,
+,,,,,,,,,8,2,NORMAL_CASE,,,
+,,,,,,,,,9,3,NORMAL_CASE,,,
+,,,,,,,,,10,3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,

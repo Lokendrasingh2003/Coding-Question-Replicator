@@ -1,0 +1,59 @@
+2025-01-08 17:16:16 - INFO - Working on Que 07 ...
+2025-01-08 17:16:16 - INFO - Requesting GPT to Replicate Question
+2025-01-08 17:16:39 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:16:39 - INFO - Question Replicated
+2025-01-08 17:16:39 - INFO - Curating replica 1:
+2025-01-08 17:16:40 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:16:47 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:16:47 - INFO - Solutions generated
+2025-01-08 17:16:47 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:17:03 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:17:03 - INFO - Testcases generated
+2025-01-08 17:17:03 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:17:23 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:17:23 - INFO - Validation Successful!
+2025-01-08 17:17:23 - INFO - Curating replica 2:
+2025-01-08 17:17:24 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:17:36 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:17:36 - INFO - Solutions generated
+2025-01-08 17:17:36 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:17:53 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:17:53 - INFO - Testcases generated
+2025-01-08 17:17:53 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:18:09 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:18:09 - INFO - Validation Successful!
+2025-01-08 17:18:09 - INFO - Curating replica 3:
+2025-01-08 17:18:09 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:18:18 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:18:18 - INFO - Solutions generated
+2025-01-08 17:18:18 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:18:32 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:18:32 - INFO - Testcases generated
+2025-01-08 17:18:32 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:18:47 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:18:47 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases do not correctly align with each other. The solutions and test cases are for different problems.
+2025-01-08 17:18:47 - INFO - Curating replica 4:
+2025-01-08 17:18:47 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:18:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:18:58 - INFO - Solutions generated
+2025-01-08 17:18:59 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:19:10 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:19:10 - INFO - Testcases generated
+2025-01-08 17:19:10 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:19:48 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:19:48 - INFO - Validation Failed.
+ [REASON]: None of the provided solutions or test cases aligns correctly with the question requirements. The solutions calculate a different problem (removing duplicates in array) instead of identifying 'Near' numbers based on absolute difference comparison.
+2025-01-08 17:19:48 - INFO - Curating replica 5:
+2025-01-08 17:19:49 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:19:59 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:19:59 - INFO - Solutions generated
+2025-01-08 17:19:59 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:20:12 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:20:12 - INFO - Testcases generated
+2025-01-08 17:20:12 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:20:39 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:20:39 - INFO - Validation Failed.
+ [REASON]: All solutions provided are related to 'Removing duplicates from an integer array' whereas the given question is about counting 'Adjacent' numbers in an array based on a defined difference E. Hence, the solutions are incorrect as they do not address the problem statement provided.
+2025-01-08 17:20:39 - INFO - Generating CSV
+2025-01-08 17:20:39 - INFO - CSV file D:\NxtWave\Coding-Question-Replicator\csv\Que 07.csv generated successfully.

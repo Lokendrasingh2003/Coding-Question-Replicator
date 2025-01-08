@@ -1,0 +1,1026 @@
+S. No,Difficulty,Question Content (in Markdown),Question_short_text,Sub_Topics,Code_language,Solution Code,Front_Code_language,Prefilled Code For Each Code Language,Test_case_input,Test_case_output,Test_case_type,Code_language,Backend Code,is_valid
+1,HARD,"### Sub-array Maximum
+
+Write a program that traverses an array from left to right, where in each step it examines a sub-array of size `k` and skips `m` positions forward after each examination. Your task is to print the maximum values found in each sub-array considered.
+
+<MultiLineNote>
+Processing should stop if there are fewer than `k` elements remaining in the array after skipping `m` elements.
+</MultiLineNote>
+
+---
+
+#### Input Format
+- The first line contains `n` size of array.
+- The second line contains space-separated integers representing the elements of the array `arr`.
+- The third line contains an integer `k`, indicating the size of each sub-array to be considered.
+- The fourth line contains an integer `m`, specifying the number of elements to skip after processing each sub-array.
+
+---
+
+#### Output Format
+- The output should be a single line consisting of space-separated values, each representing the maximum value found in the respective sub-array.
+
+---
+
+#### Constraints
+- The number of elements in the array `arr` is greater than zero.
+- Sub-array size `k` and the number of skips `m` are positive integers.
+- `k` is less than or equal to the length of the array.
+
+---
+#### Example
+
+Let's take a sample input:
+
+```
+4 7 3 9 6 1 8 0
+3
+1
+```
+We need to print:
+
+```
+7 9 9 9 6 8
+```
+
+#### Explanation
+[4 7 3] 9 6 1 8 0 -> maximum is `7`.
+4 [7 3 9] 6 1 8 0 -> moving right by 1 place, maximum is `9`.
+4 7 [3 9 6] 1 8 0 -> moving right by 1 place, maximum is `9`.
+4 7 3 [9 6 1] 8 0 -> moving right by 1 place, maximum is `9`.
+4 7 3 9 [6 1 8] 0 -> moving right by 1 place, maximum is `8`.
+4 7 3 9 6 [1 8 0] -> moving right by 1 place, maximum is `8`.
+
+---",Sub-array Maximum,DATA_TYPE_LIST,PYTHON,"n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+m = int(input())
+
+for i in range(0, n - k + 1, m + 1):
+    max_value = max(arr[i:i+k])
+    print(max_value, end=' ')
+print()
+",PYTHON,"#Write your code here
+",,,,,,true
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        int m = scanner.nextInt();
+
+        for(int i = 0; i <= n - k; i += m + 1) {
+            int maxValue = arr[i];
+            for(int j = 1; j < k; j++) {
+                if(arr[i + j] > maxValue) {
+                    maxValue = arr[i + j];
+                }
+            }
+            System.out.print(maxValue + "" "");
+        }
+        System.out.println();
+
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        //Write your code here
+    }
+}
+","8
+4 7 3 9 6 1 8 0
+3
+1","7 9 9 9 9 8
+",NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n, k, m;
+    cin >> n;
+    vector<int> arr(n);
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    cin >> k >> m;
+
+    for(int i = 0; i <= n - k; i += m + 1) {
+        int max_value = arr[i];
+        for(int j = 1; j < k; j++) {
+            if(arr[i + j] > max_value) {
+                max_value = arr[i + j];
+            }
+        }
+        cout << max_value << "" "";
+    }
+    cout << endl;
+
+    return 0;
+}",CPP,"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    //Write your code here
+    return 0;
+}","6
+1 5 9 4 6 2
+2
+1","5 9 9 6 6
+",NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n, k, m;
+    scanf(""%d"", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    scanf(""%d"", &k);
+    scanf(""%d"", &m);
+
+    for(int i = 0; i <= n - k; i += m + 1) {
+        int max_value = arr[i];
+        for(int j = 1; j < k; j++) {
+            if(arr[i + j] > max_value) {
+                max_value = arr[i + j];
+            }
+        }
+        printf(""%d "", max_value);
+    }
+    printf(""\n"");
+
+    return 0;
+}",C,"#include <stdio.h>
+
+int main() {
+    //Write your code here
+    return 0;
+}","5
+10 20 30 40 50
+2
+2","20 40
+",EDGE_CASE,,,
+,,,,,,,,,"10
+5 10 15 20 25 30 35 40 45 50
+5
+5","25 50
+",EDGE_CASE,,,
+,,,,,,,,,"7
+9 8 3 2 1 4 7
+3
+2","9 8
+",NORMAL_CASE,,,
+,,,,,,,,,"9
+3 3 3 3 3 3 3 3 3
+3
+1","3 3 3 3 3 3 3
+",NORMAL_CASE,,,
+,,,,,,,,,"8
+1 2 3 4 5 6 7 8
+4
+2","4 6
+",NORMAL_CASE,,,
+,,,,,,,,,"12
+20 19 18 17 16 15 14 13 12 11 10 9
+3
+2","20 18 16 14 12
+",NORMAL_CASE,,,
+,,,,,,,,,"15
+2 3 4 2 6 2 5 1 1 1 2 3 4 2 1
+2
+3","3 6 5 2 4 2
+",EDGE_CASE,,,
+,,,,,,,,,"8
+0 0 0 0 0 0 0 0
+4
+1","0 0 0 0 0
+",EDGE_CASE,,,
+,,,,,,,,,,,,,,
+2,HARD,"### Alternating Sum
+
+Write a program that traverses an array from left to right, where in each step it examines a sub-array of size `k` and skips `m` positions forward after each examination. Your task is to print the alternating sum of values found in each sub-array considered.
+
+<MultiLineNote>
+Processing should stop if there are fewer than `k` elements remaining in the array after skipping `m` elements.
+</MultiLineNote>
+
+---
+
+#### Input Format
+- The first line contains `n` size of array.
+- The second line contains space-separated integers representing the elements of the array `arr`.
+- The third line contains an integer `k`, indicating the size of each sub-array to be considered.
+- The fourth line contains an integer `m`, specifying the number of elements to skip after processing each sub-array.
+
+---
+
+#### Output Format
+- The output should be a single line consisting of space-separated values, each representing the alternating sum found in the respective sub-array.
+
+---
+
+#### Constraints
+- The number of elements in the array `arr` is greater than zero.
+- Sub-array size `k` and the number of skips `m` are positive integers.
+- `k` is less than or equal to the length of the array.
+
+---
+#### Example
+
+Let's take a sample input:
+
+```
+4 7 3 9 6 1 8 0
+3
+1
+```
+We need to print:
+
+```
+4 -4 16 1 -3 9
+```
+
+#### Explanation
+[4 7 3] 9 6 1 8 0 -> alternating sum is `4`.
+4 [7 3 9] 6 1 8 0 -> moving right by 1 place, alternating sum is `-4`.
+4 7 [3 9 6] 1 8 0 -> moving right by 1 place, alternating sum is `16`.
+4 7 3 [9 6 1] 8 0 -> moving right by 1 place, alternating sum is `1`.
+4 7 3 9 [6 1 8] 0 -> moving right by 1 place, alternating sum is `-3`.
+4 7 3 9 6 [1 8 0] -> moving right by 1 place, alternating sum is `9`.
+
+---",Alternating Sum,DATA_TYPE_LIST,PYTHON,"def alternating_sum(n, arr, k, m):
+    i = 0
+    while i + k <= n:
+        total = 0
+        for j in range(k):
+            if j % 2 == 0:
+                total += arr[i + j]
+            else:
+                total -= arr[i + j]
+        print(total, end=' ')
+        i += k + m
+",PYTHON,"def alternating_sum(n, arr, k, m):
+    pass # Replace pass with your code
+",,,,PYTHON,"import sys
+from solution import alternating_sum
+
+def main():
+    n = int(input())
+    arr = list(map(int, input().split()))
+    k = int(input())
+    m = int(input())
+    alternating_sum(n, arr, k, m)
+
+if __name__ == '__main__':
+    main()
+",true
+,,,,,JAVA,"import java.util.*;
+
+class Solution {
+    public void alternatingSum(int n, int[] arr, int k, int m) {
+        int i = 0;
+        while (i + k <= n) {
+            int sum = 0;
+            for (int j = 0; j < k; j++) {
+                if (j % 2 == 0) {
+                    sum += arr[i + j];
+                } else {
+                    sum -= arr[i + j];
+                }
+            }
+            System.out.print(sum + "" "");
+            i += k + m;
+        }
+    }
+}
+",JAVA,"import java.util.*;
+
+class Solution {
+    public void alternatingSum(int n, int[] arr, int k, int m) {
+        
+    }
+}
+","8
+4 7 3 9 6 1 8 0
+3
+1",4 -4 16 1 -3 9,NORMAL_CASE,JAVA,"import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        int m = scanner.nextInt();
+        Solution solution = new Solution();
+        solution.alternatingSum(n, arr, k, m);
+        scanner.close();
+    }
+}
+",
+,,,,,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+void alternatingSum(int n, vector<int>& arr, int k, int m) {
+    int i = 0;
+    while (i + k <= n) {
+        int sum = 0;
+        for (int j = 0; j < k; j++) {
+            if (j % 2 == 0) {
+                sum += arr[i + j];
+            } else {
+                sum -= arr[i + j];
+            }
+        }
+        cout << sum << "" "";
+        i += k + m;
+    }
+}
+",CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+void alternatingSum(int n, vector<int>& arr, int k, int m) {
+    
+}","5
+1 2 3 4 5
+2
+1",1 -3 1,NORMAL_CASE,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+void alternatingSum(int, vector<int>&, int, int);
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int k, m;
+    cin >> k >> m;
+    alternatingSum(n, arr, k, m);
+    return 0;
+}
+",
+,,,,,C,"#include <stdio.h>
+void alternatingSum(int n, int arr[], int k, int m) {
+    int i = 0;
+    while (i + k <= n) {
+        int sum = 0;
+        for (int j = 0; j < k; j++) {
+            if (j % 2 == 0) {
+                sum += arr[i + j];
+            } else {
+                sum -= arr[i + j];
+            }
+        }
+        printf(""%d "", sum);
+        i += k + m;
+    }
+}
+",C,"#include <stdio.h>
+void alternatingSum(int n, int arr[], int k, int m) {
+    
+}","10
+1 2 3 4 5 6 7 8 9 10
+3
+2",1 -4 3 -5 7,NORMAL_CASE,C,"#include <stdio.h>
+void alternatingSum(int, int[], int, int);
+
+int main() {
+    int n;
+    scanf(""%d"", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    int k, m;
+    scanf(""%d %d"", &k, &m);
+    alternatingSum(n, arr, k, m);
+    return 0;
+}
+",
+,,,,,,,,,"6
+1 2 3 4 5 6
+2
+1",1 -3 4 -6,NORMAL_CASE,,,
+,,,,,,,,,"7
+7 6 5 4 3 2 1
+3
+1",7 -5 3 -1,NORMAL_CASE,,,
+,,,,,,,,,"9
+9 8 7 6 5 4 3 2 1
+4
+2",9 -11 10 -12,NORMAL_CASE,,,
+,,,,,,,,,"8
+1 3 2 4 3 5 4 6
+3
+1",1 -1 4 -2 7,NORMAL_CASE,,,
+,,,,,,,,,"10
+10 9 8 7 6 5 4 3 2 1
+3
+2",10 -11 5 -6,NORMAL_CASE,,,
+,,,,,,,,,"12
+1 1 1 1 1 1 1 1 1 1 1 1
+4
+3",1 -2 2 -2,NORMAL_CASE,,,
+,,,,,,,,,"6
+1 2 1 2 1 2
+2
+2",1 -2 1,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+3,HARD,"### Sum of Sub-arrays
+
+Write a program that traverses an array from left to right, where in each step it examines a sub-array of size `k` and skips `m` positions forward after each examination. Your task is to print the sum of values found in each sub-array considered.
+
+<MultiLineNote>
+Processing should stop if there are fewer than `k` elements remaining in the array after skipping `m` elements.
+</MultiLineNote>
+
+---
+
+#### Input Format
+- The first line contains `n` size of array.
+- The second line contains space-separated integers representing the elements of the array `arr`.
+- The third line contains an integer `k`, indicating the size of each sub-array to be considered.
+- The fourth line contains an integer `m`, specifying the number of elements to skip after processing each sub-array.
+
+---
+
+#### Output Format
+- The output should be a single line consisting of space-separated values, each representing the sum found in the respective sub-array.
+
+---
+
+#### Constraints
+- The number of elements in the array `arr` is greater than zero.
+- Sub-array size `k` and the number of skips `m` are positive integers.
+- `k` is less than or equal to the length of the array.
+
+---
+#### Example
+
+Let's take a sample input:
+
+```
+4 7 3 9 6 1 8 0
+3
+1
+```
+We need to print:
+
+```
+14 19 18 16 15 9
+```
+
+#### Explanation
+[4 7 3] 9 6 1 8 0 -> sum is `14`.
+4 [7 3 9] 6 1 8 0 -> moving right by 1 place, sum is `19`.
+4 7 [3 9 6] 1 8 0 -> moving right by 1 place, sum is `18`.
+4 7 3 [9 6 1] 8 0 -> moving right by 1 place, sum is `16`.
+4 7 3 9 [6 1 8] 0 -> moving right by 1 place, sum is `15`.
+4 7 3 9 6 [1 8 0] -> moving right by 1 place, sum is `9`.
+
+---",Sum of Sub-arrays,DATA_TYPE_LIST,PYTHON,"n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+m = int(input())
+index = 0
+while index + k <= len(arr):
+    sum_subarray = sum(arr[index:index + k])
+    print(sum_subarray, end="" "")
+    index += k + m
+print()
+",PYTHON,#Write your code here,,,,,,false
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        int m = scanner.nextInt();
+        int index = 0;
+        while (index + k <= n) {
+            int sum = 0;
+            for (int j = index; j < index + k; j++) {
+                sum += arr[j];
+            }
+            System.out.print(sum + "" "");
+            index += k + m;
+        }
+        System.out.println();
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}","8
+4 7 3 9 6 1 8 0
+3
+1",14 19 18 16 15 9,NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    int k, m;
+    cin >> k >> m;
+    int index = 0;
+    while (index + k <= arr.size()) {
+        int sum = 0;
+        for (int j = index; j < index + k; j++) {
+            sum += arr[j];
+        }
+        cout << sum << "" "";
+        index += k + m;
+    }
+    cout << endl;
+    return 0;
+}
+",CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","5
+1 2 3 4 5
+2
+2",3 7,NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+int main() {
+    int n;
+    scanf(""%d"", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    int k, m;
+    scanf(""%d%d"", &k, &m);
+    int index = 0;
+    while (index + k <= n) {
+        int sum = 0;
+        for (int j = index; j < index + k; j++) {
+            sum += arr[j];
+        }
+        printf(""%d "", sum);
+        index += k + m;
+    }
+    printf(""\n"");
+    return 0;
+}
+",C,"#include <stdio.h>
+int main()
+{
+     //Write your code here
+     return 0;
+}","3
+5 10 15
+2
+1",15 25,NORMAL_CASE,,,
+,,,,,,,,,"10
+1 1 1 1 1 1 1 1 1 1
+1
+0",1 1 1 1 1 1 1 1 1 1,EDGE_CASE,,,
+,,,,,,,,,"7
+10 20 30 40 50 60 70
+5
+3",150,NORMAL_CASE,,,
+,,,,,,,,,"9
+9 8 7 6 5 4 3 2 1
+4
+2",30,NORMAL_CASE,,,
+,,,,,,,,,"5
+1 3 5 7 9
+2
+3",4,NORMAL_CASE,,,
+,,,,,,,,,"6
+2 4 6 8 10 12
+3
+2",12 30,NORMAL_CASE,,,
+,,,,,,,,,"8
+2 4 2 4 2 4 2 4
+2
+2",6 6 6,NORMAL_CASE,,,
+,,,,,,,,,"5
+1 1 1 1 1
+3
+1",3 3 3,EDGE_CASE,,,
+,,,,,,,,,,,,,,
+4,HARD,"### Average of Sub-arrays
+
+Write a program that traverses an array from left to right, where in each step it examines a sub-array of size `k` and skips `m` positions forward after each examination. Your task is to print the average of values found in each sub-array considered.
+
+<MultiLineNote>
+Processing should stop if there are fewer than `k` elements remaining in the array after skipping `m` elements.
+</MultiLineNote>
+
+---
+
+#### Input Format
+- The first line contains `n` size of array.
+- The second line contains space-separated integers representing the elements of the array `arr`.
+- The third line contains an integer `k`, indicating the size of each sub-array to be considered.
+- The fourth line contains an integer `m`, specifying the number of elements to skip after processing each sub-array.
+
+---
+
+#### Output Format
+- The output should be a single line consisting of space-separated values, each representing the average found in the respective sub-array.
+
+---
+
+#### Constraints
+- The number of elements in the array `arr` is greater than zero.
+- Sub-array size `k` and the number of skips `m` are positive integers.
+- `k` is less than or equal to the length of the array.
+
+---
+#### Example
+
+Let's take a sample input:
+
+```
+4 7 3 9 6 1 8 0
+3
+1
+```
+We need to print:
+
+```
+4.67 6.33 6.00 5.33 5.00 3.00
+```
+
+#### Explanation
+[4 7 3] 9 6 1 8 0 -> average is `4.67`.
+4 [7 3 9] 6 1 8 0 -> moving right by 1 place, average is `6.33`.
+4 7 [3 9 6] 1 8 0 -> moving right by 1 place, average is `6.00`.
+4 7 3 [9 6 1] 8 0 -> moving right by 1 place, average is `5.33`.
+4 7 3 9 [6 1 8] 0 -> moving right by 1 place, average is `5.00`.
+4 7 3 9 6 [1 8 0] -> moving right by 1 place, average is `3.00`.
+---",Average of Sub-arrays,DATA_TYPE_LIST,PYTHON,"n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+m = int(input())
+
+for i in range(0, n - k + 1, m + 1):
+    sub_array = arr[i:i + k]
+    average = sum(sub_array) / k
+    print(f'{average:.2f}', end=' ')
+print()
+",PYTHON,"#Write your code here
+",,,,,,false
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++){
+            arr[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        int m = scanner.nextInt();
+        
+        for (int i = 0; i <= n - k; i += m + 1) {
+            int sum = 0;
+            for (int j = 0; j < k; j++) {
+                sum += arr[i + j];
+            }
+            System.out.printf(""%.2f "", (float)sum / k);
+        }
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //Write your code here
+    }
+}","8
+4 7 3 9 6 1 8 0
+3
+1",4.67 6.33 6.00 5.33 5.00 3.00,NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for(int &num : arr){
+        cin >> num;
+    }
+    int k, m;
+    cin >> k >> m;
+    
+    for(int i = 0; i <= n - k; i += m + 1) {
+        int sum = 0;
+        for(int j = 0; j < k; j++) {
+            sum += arr[i + j];
+        }
+        cout << sum / (float)k << "" "";
+    }
+    cout << endl;
+    return 0;
+}",CPP,"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    //Write your code here
+    return 0;
+}","5
+1 2 3 4 5
+2
+1",1.50 2.50 3.50 4.50,NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+
+int main() {
+    int n;
+    scanf(""%d"", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    int k, m;
+    scanf(""%d %d"", &k, &m);
+    
+    for(int i = 0; i <= n - k; i += m + 1) {
+        int sum = 0;
+        for(int j = 0; j < k; j++) {
+            sum += arr[i + j];
+        }
+        printf(""%.2f "", sum / (float)k);
+    }
+    printf(""\n"");
+    return 0;
+}",C,"#include <stdio.h>
+
+int main() {
+    //Write your code here
+    return 0;
+}","10
+1 2 3 4 5 6 7 8 9 10
+4
+2",2.50 5.50 8.50,NORMAL_CASE,,,
+,,,,,,,,,"7
+10 20 30 40 50 60 70
+3
+1",20.00 30.00 40.00 50.00 60.00,NORMAL_CASE,,,
+,,,,,,,,,"7
+5 10 15 20 25 30 35
+2
+3",7.50 17.50,NORMAL_CASE,,,
+,,,,,,,,,"6
+1 1 1 1 1 1
+3
+2",1.00 1.00,NORMAL_CASE,,,
+,,,,,,,,,"9
+1 2 3 4 5 4 3 2 1
+2
+2",1.50 4.50 3.50 1.50,NORMAL_CASE,,,
+,,,,,,,,,"5
+9 8 7 6 5
+2
+1",8.50 7.50 6.50 5.50,NORMAL_CASE,,,
+,,,,,,,,,"5
+3 8 2 7 1
+3
+1",4.33 5.67 3.33,NORMAL_CASE,,,
+,,,,,,,,,"8
+4 4 4 4 4 4 4 4
+4
+4",4.00 4.00,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+5,HARD,"### Sub-array Product
+
+Write a program that traverses an array from left to right, where in each step it examines a sub-array of size `k` and skips `m` positions forward after each examination. Your task is to print the product of values found in each sub-array considered.
+
+<MultiLineNote>
+Processing should stop if there are fewer than `k` elements remaining in the array after skipping `m` elements.
+</MultiLineNote>
+
+---
+
+#### Input Format
+- The first line contains `n` size of array.
+- The second line contains space-separated integers representing the elements of the array `arr`.
+- The third line contains an integer `k`, indicating the size of each sub-array to be considered.
+- The fourth line contains an integer `m`, specifying the number of elements to skip after processing each sub-array.
+
+---
+
+#### Output Format
+- The output should be a single line consisting of space-separated values, each representing the product found in the respective sub-array.
+
+---
+
+#### Constraints
+- The number of elements in the array `arr` is greater than zero.
+- Sub-array size `k` and the number of skips `m` are positive integers.
+- `k` is less than or equal to the length of the array.
+
+---
+#### Example
+
+Let's take a sample input:
+
+```
+4 7 3 9 6 1 8 0
+3
+1
+```
+We need to print:
+
+```
+84 189 162 54 48 0
+```
+
+#### Explanation
+[4 7 3] 9 6 1 8 0 -> product is `84`.
+4 [7 3 9] 6 1 8 0 -> moving right by 1 place, product is `189`.
+4 7 [3 9 6] 1 8 0 -> moving right by 1 place, product is `162`.
+4 7 3 [9 6 1] 8 0 -> moving right by 1 place, product is `54`.
+4 7 3 9 [6 1 8] 0 -> moving right by 1 place, product is `48`.
+4 7 3 9 6 [1 8 0] -> moving right by 1 place, product is `0`.
+
+---",Sub-array Product,DATA_TYPE_LIST,PYTHON,"n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+m = int(input())
+
+for i in range(0, n - k + 1, k + m):
+    product = 1
+    for j in range(k):
+        product *= arr[i + j]
+    print(product, end=' ')
+",PYTHON,"#Write your code here
+",,,,,,false
+,,,,,JAVA,"import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        
+        int k = scanner.nextInt();
+        int m = scanner.nextInt();
+        
+        for (int i = 0; i <= n - k; i += (k + m)) {
+            int product = 1;
+            for (int j = 0; j < k; j++) {
+                product *= arr[i + j];
+            }
+            System.out.print(product + "" "");
+        }
+        scanner.close();
+    }
+}
+",JAVA,"import java.util.Scanner;
+ 
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}","7
+4 7 3 9 6 1 8
+3
+1",84 189 162 54,NORMAL_CASE,,,
+,,,,,CPP,"#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n, k, m;
+    cin >> n;
+    
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    cin >> k;
+    cin >> m;
+    
+    for (int i = 0; i <= n - k; i += (k + m)) {
+        int product = 1;
+        for (int j = 0; j < k; j++) {
+            product *= arr[i + j];
+        }
+        cout << product << "" "";
+    }
+    return 0;
+}
+",CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","5
+1 2 3 4 5
+2
+1",2 12,NORMAL_CASE,,,
+,,,,,C,"#include <stdio.h>
+
+int main() {
+    int n, k, m;
+    scanf(""%d"", &n);
+    
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    
+    scanf(""%d"", &k);
+    scanf(""%d"", &m);
+    
+    for (int i = 0; i <= n - k; i += (k + m)) {
+        int product = 1;
+        for (int j = 0; j < k; j++) {
+            product *= arr[i + j];
+        }
+        printf(""%d "", product);
+    }
+    return 0;
+}
+",C,"#include <stdio.h>
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","8
+1 2 3 4 5 6 7 8
+2
+2",2 20,EDGE_CASE,,,
+,,,,,,,,,"6
+10 20 30 40 50 60
+3
+3",6000,NORMAL_CASE,,,
+,,,,,,,,,"6
+11 22 33 44 55 66
+3
+1",7986 31944,NORMAL_CASE,,,
+,,,,,,,,,"9
+1 1 1 1 1 1 1 1 1
+2
+2",1 1 1,NORMAL_CASE,,,
+,,,,,,,,,"10
+2 3 5 7 11 13 17 19 23 29
+2
+1",6 35,NORMAL_CASE,,,
+,,,,,,,,,"8
+4 3 6 8 9 2 7 5
+4
+3",576,EDGE_CASE,,,
+,,,,,,,,,"5
+12 11 10 9 8
+3
+1",1320 990,NORMAL_CASE,,,
+,,,,,,,,,"6
+3 6 9 12 15 18
+2
+2",18 108,NORMAL_CASE,,,
+,,,,,,,,,,,,,,

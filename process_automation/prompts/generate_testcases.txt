@@ -4,11 +4,11 @@ I will give you coding question in markdown format. You need to read the questio
 Based one the above understanding you need to generate 30 testcase for the question.
 
 INSTRUCTIONS FOR TESTCASE GENERATION.
-1. First two testcases will be visible testcases so they should be small testcase COMPULSARILY.
-2. These testcases should be able to test all aspect of the question.
-3. Make sure each testcase alligns best with the given input format.
-4. Each testcase should fall under given constraints.
-5.  IMPORTANT NOTE: Sometimes question will have hidden condition on input such that all random input can't be valid input for the question. You need to make sure none of your testcases will be invalid under this condition.
+1. First two testcases will be visible testcases so they should be small testcase COMPULSORILY.
+2. Make sure each testcase aligns best with the given input format.
+3. Each testcase should fall under given constraints.
+4. If there are array as input make sure it's size is greater than 0
+5. IMPORTANT NOTE: Sometimes question will have hidden condition on input such that all random input can't be valid input for the question. You need to make sure none of your testcases will be invalid under this condition.
 
 For each testcase, You should generate an output also.
 
@@ -30,12 +30,22 @@ RESPONSE JSON FORMAT:
 ]
 ```
 
+[!!IMPORTANT NOTE]
+HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or output until it is asked in question.
+    FOR EXAMPLE: your response SHOULD NOT CONTAIN SUCH INPUT OUTPUTS:
+        {
+            "input": "100\n" + " ".join(str(x) for x in list(range(1, 51)) + list(range(1, 51))),
+            "output": " ".join(str(x) for x in range(1, 51)),
+            "testcase_type": "time complexity"
+        }
+        This response contains code in input and output instead of this you should give correct array values which can be directly read by solution code.
+
 Your responses should only contain the json without any backtick or any kind of formatting. It should be a single json string which can be parsed into json directly.
 
 NOTE 1:  MAKE SURE THERE WILL BE EXACTLY 30 TESTCASES.
 NOTE 2: For each test case input and outputs will be single string and if there is lines-breaks then use [\n] to represent line.
 
-    FOR EXAMPLE: If input requires single integer n in first line and n space separated integers in second line then your reponse for input should be:
+    FOR EXAMPLE: If input requires single integer n in first line and n space separated integers in second line then your response for input should be:
         "input": "5\n1 2 3 4 5"
 
 NOTE 3: Testcase type should be one of the following names:
@@ -44,7 +54,7 @@ NOTE 3: Testcase type should be one of the following names:
 
 [!!IMPORTANT NOTE]
 HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or output untill it is asked in question.
-    FOR EXAMPLE: your response SHOULD NOT BE:
+    FOR EXAMPLE: your response SHOULD NOT CONTAIN SUCH INPUT OUTPUTS:
         {
             "input": "100\n" + " ".join(str(x) for x in list(range(1, 51)) + list(range(1, 51))),
             "output": " ".join(str(x) for x in range(1, 51)),
@@ -52,7 +62,8 @@ HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or out
         }
         This response contains code in input and output instead of this you should give correct array values which can be directly read by solution code.
 
-BEFORE RESPONDING CHECK WHETHER INPUT AND OUTPUTS ARE AS PER GIVEN INSTRUCTIONS OR NOT. IF NOT THEN CORRECT THEM.
+IMPORTANT NOTE:BEFORE RESPONDING CHECK WHETHER INPUT AND OUTPUTS ARE AS PER GIVEN INSTRUCTIONS OR NOT. IF NOT THEN CORRECT THEM.
+NOTE: MAKE SURE YOU HAVE GIVEN 30 TESTCASES.
 
-BELOW IS THE QUESTION FOR WHICH YOUR ARE SUPPOSSED TO GENERATE TESTCASES ACCORDING TO ABOVE DESCRIPTION:
+BELOW IS THE QUESTION FOR WHICH YOUR ARE SUPPOSED TO GENERATE TESTCASES ACCORDING TO ABOVE DESCRIPTION:
 
