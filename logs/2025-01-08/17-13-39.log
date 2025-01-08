@@ -1,0 +1,138 @@
+2025-01-08 17:13:39 - INFO - Working on Que 07 ...
+2025-01-08 17:13:39 - INFO - Requesting GPT to Replicate Question
+2025-01-08 17:13:54 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:13:54 - INFO - Question Replicated
+2025-01-08 17:13:54 - ERROR - Traceback (most recent call last):
+2025-01-08 17:13:54 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\main.py", line 49, in <module>
+2025-01-08 17:13:54 - ERROR - replicator.replicate(question_data.get('question'), question_data.get('file_name'), question_data.get('difficulty'), question_data.get('sub_topic'))
+2025-01-08 17:13:54 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\replicator.py", line 52, in replicate
+2025-01-08 17:13:54 - ERROR - replicated_questions = json.loads(replicated_questions)
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:54 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - File "D:\Compilers\Program Files\Python312\Lib\json\__init__.py", line 346, in loads
+2025-01-08 17:13:55 - ERROR - return _default_decoder.decode(s)
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - File "D:\Compilers\Program Files\Python312\Lib\json\decoder.py", line 337, in decode
+2025-01-08 17:13:55 - ERROR - obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - File "D:\Compilers\Program Files\Python312\Lib\json\decoder.py", line 353, in raw_decode
+2025-01-08 17:13:55 - ERROR - obj, end = self.scan_once(s, idx)
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - ^
+2025-01-08 17:13:55 - ERROR - json.decoder
+2025-01-08 17:13:55 - ERROR - .
+2025-01-08 17:13:55 - ERROR - JSONDecodeError
+2025-01-08 17:13:55 - ERROR - :
+2025-01-08 17:13:55 - ERROR - Expecting ':' delimiter: line 2 column 18 (char 19)

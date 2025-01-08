@@ -1,0 +1,575 @@
+S. No,Difficulty,Question Content (in Markdown),Question_short_text,Sub_Topics,Code_language,Solution Code,Front_Code_language,Prefilled Code For Each Code Language,Test_case_input,Test_case_output,Test_case_type,Code_language,Backend Code,is_valid
+1,MEDIUM,"### Nearby Difference
+
+Given an array of integers `A`, and an integer `K`, determine how many elements in the array can be classified as `Close`.
+
+An element `X` is `Close` if there is at least one element in the array such that the absolute difference between that element and `X` is less than `K`.
+
+---
+
+#### Input Format
+- The first line contains two integers `N` and `K` respectively.
+- The second line contains `N` integers separated by space.
+
+---
+
+#### Output Format
+- Print a single integer denoting the total number of `Close` elements.
+
+---
+
+#### Constraints
+- 1 <= `N` <= 1000
+- 0 <= `K` <= 1000
+- 0 <= `A[i]` <= 1000
+
+---
+
+#### Sample Input 1
+```
+5 3
+1 4 7 10 13
+```
+#### Sample Output 1
+```
+3
+```
+#### Explanation
+In the first example, the numbers 4, 7, and 10 have at least one other element within a distance of 3.
+
+---
+
+#### Sample Input 2
+```
+4 5
+10 15 25 30
+```
+#### Sample Output 2
+```
+2
+```
+#### Explanation
+In the second example, the numbers 10 and 15 have another element within a distance of 5.",Nearby Difference,DATA_TYPE_LIST,PYTHON,"n, k = map(int, input().split())
+A = list(map(int, input().split()))
+count = 0
+for i in range(n):
+    close = any(abs(A[i] - A[j]) < k for j in range(n) if i != j)
+    if close:
+        count += 1
+print(count)
+",PYTHON,"#Write your code here
+",,,,,,true
+,,,,,,,JAVA,"import java.util.Scanner;
+ 
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}","5 3
+1 4 7 10 13",3,NORMAL_CASE,,,
+,,,,,,,CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","4 5
+10 15 25 30",2,NORMAL_CASE,,,
+,,,,,,,C,"#include <stdio.h>
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","3 1
+0 1 2",2,NORMAL_CASE,,,
+,,,,,,,,,"6 2
+5 3 8 6 1 9",6,NORMAL_CASE,,,
+,,,,,,,,,"5 7
+5 15 25 30 18",3,NORMAL_CASE,,,
+,,,,,,,,,"7 10
+7 6 5 5 7 6 5",7,NORMAL_CASE,,,
+,,,,,,,,,"2 0
+5 5",0,EDGE_CASE,,,
+,,,,,,,,,"10 4
+1 2 3 4 5 6 7 8 9 10",10,NORMAL_CASE,,,
+,,,,,,,,,"9 3
+2 5 8 4 1 7 2 3 12",9,NORMAL_CASE,,,
+,,,,,,,,,"8 20
+10 30 50 70 90 110 130 150",0,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+2,MEDIUM,"### Positive Proximity
+
+Given an array of integers `P` and a positive integer `R`, count how many elements in the array are `Proximal`.
+
+An element `V` is `Proximal` if there exists at least one other element in the array such that the difference between that element and `V` is strictly less than `R`.
+
+---
+
+#### Input Format
+- The first line contains two integers `Q` and `R` respectively.
+- The second line contains `Q` integers separated by space.
+
+---
+
+#### Output Format
+- Print a single integer denoting the number of `Proximal` elements.
+
+---
+
+#### Constraints
+- 1 <= `Q` <= 1000
+- 1 <= `R` <= 1000
+- 0 <= `P[i]` <= 1000
+
+---
+
+#### Sample Input 1
+```
+6 2
+3 8 14 18 22 25
+```
+#### Sample Output 1
+```
+3
+```
+#### Explanation
+In the first example, the numbers 8, 18, and 22 have at least one other element within a distance of 2.
+
+---
+
+#### Sample Input 2
+```
+5 5
+1 6 11 16 21
+```
+#### Sample Output 2
+```
+4
+```
+#### Explanation
+In the second example, the numbers 6, 11, 16, and 21 have another element within a distance of 5.",Positive Proximity,DATA_TYPE_LIST,PYTHON,"Q, R = map(int, input().split())
+P = list(map(int, input().split()))
+
+count = 0
+for i in range(Q):
+    for j in range(Q):
+        if i != j and abs(P[i] - P[j]) < R:
+            count += 1
+            break
+
+print(count)
+",PYTHON,"# Write your code here
+",,,,,,true
+,,,,,,,JAVA,"import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        // Write your code below
+    }
+}","6 2
+3 8 14 18 22 25",3,NORMAL_CASE,,,
+,,,,,,,CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+     // Write your code here
+     return 0;
+}","5 5
+1 6 11 16 21",4,NORMAL_CASE,,,
+,,,,,,,C,"#include <stdio.h>
+
+int main()
+{
+     // Write your code here
+     return 0;
+}","3 1
+10 11 13",2,NORMAL_CASE,,,
+,,,,,,,,,"4 3
+2 5 8 11",3,NORMAL_CASE,,,
+,,,,,,,,,"6 4
+6 7 12 13 16 20",4,NORMAL_CASE,,,
+,,,,,,,,,"7 10
+1 11 21 31 41 51 61",6,NORMAL_CASE,,,
+,,,,,,,,,"8 15
+2 17 32 47 62 77 92 107",7,NORMAL_CASE,,,
+,,,,,,,,,"9 50
+50 100 150 200 250 300 350 400 450",0,NORMAL_CASE,,,
+,,,,,,,,,"5 8
+8 16 24 32 40",4,NORMAL_CASE,,,
+,,,,,,,,,"4 7
+3 10 17 24",3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+3,MEDIUM,"### Neighboring Elements
+
+Given an array of integers `D`, and an integer `J`, count how many elements in the array are designated as `Neighborly`.
+
+Element `W` is considered `Neighborly` if there is at least one other element in the array such that the absolute difference between them is less than `J`.
+
+---
+
+#### Input Format
+- The first line contains two integers `V` and `J` respectively.
+- The second line contains `V` integers separated by space.
+
+---
+
+#### Output Format
+- Print a single integer denoting the total number of `Neighborly` elements.
+
+---
+
+#### Constraints
+- 1 <= `V` <= 1000
+- 0 <= `J` <= 1000
+- 0 <= `D[i]` <= 1000
+
+---
+
+#### Sample Input 1
+```
+7 3
+1 3 6 10 13 17 20
+```
+#### Sample Output 1
+```
+4
+```
+#### Explanation
+In the first example, the numbers 3, 6, 10, and 13 have at least one other element within a distance of 3.
+
+---
+
+#### Sample Input 2
+```
+4 4
+2 8 12 20
+```
+#### Sample Output 2
+```
+3
+```
+#### Explanation
+In the second example, the numbers 8, 12, and 20 have another element within a distance of 4.",Neighboring Elements,DATA_TYPE_LIST,PYTHON,"def remove_duplicates(arr):
+    arr.sort()
+    result = [arr[0]]
+    for i in range(1, len(arr)):
+        if arr[i] != arr[i - 1]:
+            result.append(arr[i])
+    return result
+",PYTHON,"def remove_duplicates(arr):
+    # Fill this function in
+    pass",,,,PYTHON,"if __name__ == ""__main__"":
+    import sys
+    input = sys.stdin.read
+    data = input().strip().split()
+    n = int(data[0])
+    arr = list(map(int, data[1:]))
+    result = remove_duplicates(arr)
+    print("" "".join(map(str, result)))
+",false
+,,,,,,,JAVA,"import java.util.*;
+
+class Solution {
+    public List<Integer> removeDuplicates(List<Integer> arr) {
+        // Complete this function
+        return new ArrayList<>();
+    }
+}
+","5
+1 2 3 4 5",2 3 4 5 -1,NORMAL_CASE,JAVA,"import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        List<Integer> arr = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            arr.add(scanner.nextInt());
+        }
+        Solution solution = new Solution();
+        List<Integer> result = solution.removeDuplicates(arr);
+        for (int num : result) {
+            System.out.print(num + "" "");
+        }
+        System.out.println();
+        scanner.close();
+    }
+}
+",
+,,,,,,,CPP,"#include <bits/stdc++.h>
+using namespace std;
+
+
+vector<int> remove_duplicates(vector<int>& arr){
+
+}
+","4
+4 5 2 25",5 25 25 -1,NORMAL_CASE,CPP,"#include <iostream>
+#include <vector>
+#include ""solution.h""
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    vector<int> result = remove_duplicates(arr);
+    for (int num : result) {
+        cout << num << "" "";
+    }
+    cout << endl;
+    return 0;
+}
+",
+,,,,,,,C,"#include <stdio.h>
+#include <stdlib.h>
+
+int cmpfunc(const void * a, const void * b) {
+    return (*(int*)a - *(int*)b);
+}
+ 
+void remove_duplicates(int arr[], int n, int result[], int *new_size) {
+    qsort(arr, n, sizeof(int), cmpfunc);
+    // Fill this function in
+}
+",,,,C,"#include <stdio.h>
+
+#ifndef FILE1_H
+#define FILE1_H
+void remove_duplicates(int[], int, int[], int *);
+#endif
+
+int main() {
+    int n;
+    scanf(""%d"", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf(""%d"", &arr[i]);
+    }
+    int result[n];
+    int new_size = 0;
+    remove_duplicates(arr, n, result, &new_size);
+    for (int i = 0; i < new_size; i++) {
+        printf(""%d "", result[i]);
+    }
+    printf(""\n"");
+    return 0;
+}
+",
+4,MEDIUM,"### Close Numbers
+
+Given an array of integers `F` and an integer `H`, identify the number of `Near` numbers in the array.
+
+An element `U` is `Near` if there is at least one other element in the array, such that the absolute difference between that element and `U` is less than `H`.
+
+---
+
+#### Input Format
+- The first line contains two integers `K` and `H` respectively.
+- The second line contains `K` integers separated by space.
+
+---
+
+#### Output Format
+- Print a single integer denoting the total number of `Near` numbers.
+
+---
+
+#### Constraints
+- 1 <= `K` <= 1000
+- 0 <= `H` <= 1000
+- 0 <= `F[i]` <= 1000
+
+---
+
+#### Sample Input 1
+```
+5 2
+5 10 15 20 25
+```
+#### Sample Output 1
+```
+4
+```
+#### Explanation
+In the first example, the numbers 10, 15, 20, and 25 have at least one other element within a distance of 2.
+
+---
+
+#### Sample Input 2
+```
+6 3
+2 5 8 11 15 18
+```
+#### Sample Output 2
+```
+5
+```
+#### Explanation
+In the second example, the numbers 5, 8, 11, 15, and 18 have another element within a distance of 3.",Close Numbers,DATA_TYPE_LIST,PYTHON,"def count_near_numbers(K, H, F):
+    count = 0
+    for i in range(K):
+        for j in range(K):
+            if i != j and abs(F[i] - F[j]) < H:
+                count += 1
+                break
+    return count
+
+K, H = map(int, input().split())
+F = list(map(int, input().split()))
+print(count_near_numbers(K, H, F))
+",PYTHON,"#Write your code here
+",,,,,,false
+,,,,,,,JAVA,"import java.util.Scanner;
+ 
+class Main {
+    public static void main(String[] args) {
+        //Write your code below
+    }
+}","5 2
+5 10 15 20 25",4,VISIBLE,,,
+,,,,,,,CPP,"#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","6 3
+2 5 8 11 15 18",5,VISIBLE,,,
+,,,,,,,C,"#include <stdio.h>
+
+int main()
+{
+     //Write your code here
+     return 0;
+}","1 0
+100",0,EDGE_CASE,,,
+,,,,,,,,,"2 1
+8 9",2,EDGE_CASE,,,
+,,,,,,,,,"3 5
+10 14 19",2,NORMAL_CASE,,,
+,,,,,,,,,"10 4
+1 2 3 4 5 6 7 8 9 10",10,NORMAL_CASE,,,
+,,,,,,,,,"4 6
+7 23 29 35",2,NORMAL_CASE,,,
+,,,,,,,,,"7 20
+50 75 100 125 150 175 200",0,NORMAL_CASE,,,
+,,,,,,,,,"5 10
+30 30 30 30 30",5,NORMAL_CASE,,,
+,,,,,,,,,"5 2
+1 3 4 8 11",3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
+5,MEDIUM,"### Nearby Value
+
+Given an array of integers `G` and an integer `E`, determine the count of `Adjacent` numbers in the array.
+
+An element `Z` is `Adjacent` if there exists at least one other element in the array such that the difference between the two is less than `E`.
+
+---
+
+#### Input Format
+- The first line contains two integers `W` and `E` respectively.
+- The second line contains `W` integers separated by space.
+
+---
+
+#### Output Format
+- Print a single integer denoting the total number of `Adjacent` numbers.
+
+---
+
+#### Constraints
+- 1 <= `W` <= 1000
+- 0 <= `E` <= 1000
+- 0 <= `G[i]` <= 1000
+
+---
+
+#### Sample Input 1
+```
+5 1
+3 5 7 9 11
+```
+#### Sample Output 1
+```
+0
+```
+#### Explanation
+In the first example, none of the numbers within the array fall within the range dictated by the parameter `E`.
+
+---
+
+#### Sample Input 2
+```
+6 4
+1 2 3 4 5 6
+```
+#### Sample Output 2
+```
+6
+```
+#### Explanation
+In the second example, every number within the array falls within the range as dictated by the parameter `E`.",Nearby Value,DATA_TYPE_LIST,PYTHON,"W, E = map(int, input().split())
+G = list(map(int, input().split()))
+
+count = 0
+for i in range(W):
+    for j in range(W):
+        if i != j and abs(G[i] - G[j]) < E:
+            count += 1
+            break
+
+print(count)
+",PYTHON,"# Write your code here
+",,,,,,false
+,,,,,,,JAVA,"import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}","5 1
+3 5 7 9 11",0,NORMAL_CASE,,,
+,,,,,,,CPP,"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    // Write your code here
+    return 0;
+}","6 4
+1 2 3 4 5 6",6,NORMAL_CASE,,,
+,,,,,,,C,"#include <stdio.h>
+
+int main()
+{
+    // Write your code here
+    return 0;
+}","2 0
+10 20",0,NORMAL_CASE,,,
+,,,,,,,,,"10 3
+10 13 14 15 20 25 28 30 35 40",3,NORMAL_CASE,,,
+,,,,,,,,,"3 2
+500 502 504",2,NORMAL_CASE,,,
+,,,,,,,,,"4 5
+100 200 300 400",0,NORMAL_CASE,,,
+,,,,,,,,,"7 10
+50 55 65 70 80 85 90",6,NORMAL_CASE,,,
+,,,,,,,,,"5 1000
+1 2 3 4 5",5,EDGE_CASE,,,
+,,,,,,,,,"6 500
+0 100 200 300 400 500",1,NORMAL_CASE,,,
+,,,,,,,,,"3 1
+0 0 0",3,NORMAL_CASE,,,
+,,,,,,,,,,,,,,
