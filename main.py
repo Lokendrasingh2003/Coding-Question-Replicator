@@ -45,6 +45,7 @@ if __name__ == '__main__':
 
     for question_data in get_base_questions_data():
         if question_data.get('question').strip() != "":
+            print(f"Working on {question_data.get('file_name')} ...")
             replicator.replicate(question_data.get('question'), question_data.get('file_name'), question_data.get('difficulty'), question_data.get('sub_topic'))
 
     for i in range(3):

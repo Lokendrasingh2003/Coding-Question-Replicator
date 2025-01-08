@@ -1,0 +1,309 @@
+2025-01-08 17:02:17 - INFO - Working on Que 07 ...
+2025-01-08 17:02:18 - INFO - Requesting GPT to Replicate Question
+2025-01-08 17:02:37 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:02:37 - INFO - Question Replicated
+2025-01-08 17:02:37 - INFO - Curating replica 1:
+2025-01-08 17:02:38 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:02:45 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:02:45 - INFO - Solutions generated
+2025-01-08 17:02:46 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:03:01 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:03:01 - INFO - Testcases generated
+2025-01-08 17:03:02 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:03:20 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:03:20 - INFO - Validation Failed.
+ [REASON]: The initial test cases provided do not align with the given question's description. For example, an output of '2 3 4 5 -1' does not fit with the logic of counting Close Neighbors. The solutions had to be updated to reflect this problem correctly.
+2025-01-08 17:03:20 - INFO - Retrying...
+2025-01-08 17:03:20 - INFO - Attempt 1/5
+2025-01-08 17:03:21 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:03:35 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:03:35 - INFO - Solutions generated
+2025-01-08 17:03:35 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:03:46 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:03:46 - INFO - Testcases generated
+2025-01-08 17:03:47 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:04:19 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:04:19 - INFO - Validation Successful!
+2025-01-08 17:04:19 - INFO - Curating replica 2:
+2025-01-08 17:04:19 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:04:34 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:04:34 - INFO - Solutions generated
+2025-01-08 17:04:34 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:04:46 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:04:46 - INFO - Testcases generated
+2025-01-08 17:04:46 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:05:02 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:05:02 - INFO - Validation Failed.
+ [REASON]: The given testcase outputs do not match the expected outputs generated from the provided solutions.
+2025-01-08 17:05:02 - INFO - Retrying...
+2025-01-08 17:05:02 - INFO - Attempt 1/5
+2025-01-08 17:05:03 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:05:13 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:05:13 - INFO - Solutions generated
+2025-01-08 17:05:14 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:05:30 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:05:30 - INFO - Testcases generated
+2025-01-08 17:05:30 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:05:51 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:05:51 - INFO - Validation Failed.
+ [REASON]: The outputs for given test cases do not match the expected outputs. The question and solutions are not aligned with the given test cases.
+2025-01-08 17:05:51 - INFO - Attempt 2/5
+2025-01-08 17:05:52 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:06:03 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:06:03 - INFO - Solutions generated
+2025-01-08 17:06:04 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:06:32 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:06:32 - INFO - Testcases generated
+2025-01-08 17:06:32 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:06:55 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:06:55 - INFO - Validation Successful!
+2025-01-08 17:06:55 - INFO - Curating replica 3:
+2025-01-08 17:06:55 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:07:06 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:07:06 - INFO - Solutions generated
+2025-01-08 17:07:07 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:07:20 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:07:20 - INFO - Testcases generated
+2025-01-08 17:07:21 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:07:47 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:07:47 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases were for different problems. The solutions addressed the 'Proximity Count' problem, but the test cases and expected outputs were for a different problem about removing duplicates and other operations. The solutions provided for 'Proximity Count' were correct on further analysis.
+2025-01-08 17:07:47 - INFO - Retrying...
+2025-01-08 17:07:47 - INFO - Attempt 1/5
+2025-01-08 17:07:48 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:07:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:07:58 - INFO - Solutions generated
+2025-01-08 17:07:59 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:08:12 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:08:12 - INFO - Testcases generated
+2025-01-08 17:08:13 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:08:38 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:08:38 - INFO - Validation Successful!
+2025-01-08 17:08:38 - INFO - Curating replica 4:
+2025-01-08 17:08:38 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:08:48 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:08:48 - INFO - Solutions generated
+2025-01-08 17:08:48 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:09:01 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:09:01 - INFO - Testcases generated
+2025-01-08 17:09:02 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:09:21 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:09:21 - INFO - Validation Successful!
+2025-01-08 17:09:21 - INFO - Curating replica 5:
+2025-01-08 17:09:21 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:09:33 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:09:33 - INFO - Solutions generated
+2025-01-08 17:09:34 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:09:51 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:09:51 - INFO - Testcases generated
+2025-01-08 17:09:51 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:10:10 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:10:10 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases do not match the given question requirements. The solutions provided are for removing duplicates in an array, whereas the question is about finding close elements based on given criteria.
+2025-01-08 17:10:10 - INFO - Retrying...
+2025-01-08 17:10:10 - INFO - Attempt 1/5
+2025-01-08 17:10:11 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:10:21 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:10:21 - INFO - Solutions generated
+2025-01-08 17:10:21 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:10:36 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:10:36 - INFO - Testcases generated
+2025-01-08 17:10:37 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:11:01 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:11:01 - INFO - {
+    "result": "true",
+    "solutions": {
+        "c": {
+            "solution_code": "#include <stdio.h>\n#include <math.h>\n\nint main() {\n    int X, Y;\n    scanf(\"%d %d\", &X, &Y);\n    int G[X];\n    for(int i = 0; i < X; i++) {\n        scanf(\"%d\", &G[i]);\n    }\n    int closeElementsCount = 0;\n    for(int i = 0; i < X; i++) {\n        for(int j = 0; j < X; j++) {\n            if(i != j && abs(G[i] - G[j]) < Y) {\n                closeElementsCount++;\n                break;\n            }\n        }\n    }\n    printf(\"%d\\n\", closeElementsCount);\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <stdio.h>\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+        },
+        "cpp": {
+            "solution_code": "#include <iostream>\n#include <cmath>\n#include <vector>\nusing namespace std;\nint main() {\n    int X, Y;\n    cin >> X >> Y;\n    vector<int> G(X);\n    for(int i = 0; i < X; i++) {\n        cin >> G[i]; \n    }\n    int closeElementsCount = 0;\n    for(int i = 0; i < X; i++) {\n        for(int j = 0; j < X; j++) {\n            if(i != j && abs(G[i] - G[j]) < Y) {\n                closeElementsCount++;\n                break;\n            }\n        }\n    }\n    cout << closeElementsCount << endl;\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <bits/stdc++.h>\nusing namespace std;\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+        },
+        "java": {
+            "solution_code": "import java.util.Scanner;\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int X = scanner.nextInt();\n        int Y = scanner.nextInt();\n        int[] G = new int[X];\n        for(int i = 0; i < X; i++) {\n            G[i] = scanner.nextInt();\n        }\n        int closeElementsCount = 0;\n        for(int i = 0; i < X; i++) {\n            for(int j = 0; j < X; j++) {\n                if(i != j && Math.abs(G[i] - G[j]) < Y) {\n                    closeElementsCount++;\n                    break;\n                }\n            }\n        }\n        System.out.println(closeElementsCount);\n        scanner.close();\n    }\n}\n",
+            "backend_code": "",
+            "prefilled_code": "import java.util.Scanner;\n \nclass Main {\n    public static void main(String[] args) {\n        //Write your code below\n    }\n}"
+        },
+        "python": {
+            "solution_code": "X, Y = map(int, input().split())\nG = list(map(int, input().split()))\nclose_elements_count = 0\nfor i in range(X):\n    for j in range(X):\n        if i != j and abs(G[i] - G[j]) < Y:\n            close_elements_count += 1\n            break\nprint(close_elements_count)\n",
+            "backend_code": "",
+            "prefilled_code": "#Write your code here\n"
+        }
+    },
+    "testcases": [
+        {
+            "input": "4 5\n12 8 4 2",
+            "output": "2",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "3 1\n1 2 3",
+            "output": "2",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5 0\n1 1 1 1 1",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "5 2\n5 10 15 20 25",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "6 5\n10 15 20 25 30 35",
+            "output": "3",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "7 100\n100 200 300 400 500 600 700",
+            "output": "2",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "8 1\n2 2 3 3 4 4 5 5",
+            "output": "8",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "1 1000\n0",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "2 0\n5 5",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "10 3\n1 2 3 4 5 6 7 8 9 10",
+            "output": "8",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "20 10\n10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200",
+            "output": "18",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5 7\n10 20 30 40 50",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "6 5\n10 15 20 25 30 35",
+            "output": "3",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "4 10\n90 80 70 60",
+            "output": "3",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "3 5\n9 4 1",
+            "output": "2",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10 100\n100 200 300 400 500 600 700 800 900 1000",
+            "output": "2",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "9 2\n1 3 2 5 4 6 8 7 9",
+            "output": "9",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "8 3\n1 4 7 10 13 16 19 22",
+            "output": "7",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "6 100\n100 300 500 700 900 1100",
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "5 5\n20 25 30 35 40",
+            "output": "4",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5 3\n4 7 8 7 4",
+            "output": "3",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10 5\n1 11 21 31 41 51 61 71 81 91",
+            "output": "8",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "25 10\n1 16 32 48 64 80 96 112 128 144 160 176 192 208 224 240 256 272 288 304 320 336 352 368 384",
+            "output": "22",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "30 50\n50 100 150 200 250 300 350 400 450 500 550 600 650 700 750 800 850 900 950 1000 1050 1100 1150 1200 1250 1300 1350 1400 1450 1500",
+            "output": "30",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "15 20\n15 30 45 60 75 90 105 120 135 150 165 180 195 210 225",
+            "output": "14",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "50 1\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50",
+            "output": "48",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "1000 0\n" + " ".join(str(x) for x in range(1000)),
+            "output": "0",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "1000 500\n" + " ".join(str(x) for x in range(1000)),
+            "output": "998",
+            "testcase_type": "EDGE_CASE"
+        }
+    ]
+}
+2025-01-08 17:11:01 - INFO - Attempt 2/5
+2025-01-08 17:11:01 - INFO - Requesting GPT to generate solutions
+2025-01-08 17:11:12 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:11:12 - INFO - Solutions generated
+2025-01-08 17:11:12 - INFO - Requesting GPT to generate test cases
+2025-01-08 17:11:25 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:11:25 - INFO - Testcases generated
+2025-01-08 17:11:25 - INFO - Requesting GPT to validate solutions
+2025-01-08 17:11:59 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-08 17:11:59 - INFO - Validation Successful!
+2025-01-08 17:11:59 - INFO - Generating CSV
+2025-01-08 17:11:59 - ERROR - Traceback (most recent call last):
+2025-01-08 17:11:59 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\main.py", line 49, in <module>
+2025-01-08 17:11:59 - ERROR - replicator.replicate(question_data.get('question'), question_data.get('file_name'), question_data.get('difficulty'), question_data.get('sub_topic'))
+2025-01-08 17:11:59 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\replicator.py", line 74, in replicate
+2025-01-08 17:11:59 - ERROR - self.PARSER.parse_into_coding_question_csv(replica_response, filename, self.BASE_DIR)
+2025-01-08 17:11:59 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\json_to_csv_parser.py", line 34, in parse_into_coding_question_csv
+2025-01-08 17:11:59 - ERROR - row[lang_sequence[k]][8] = solutions.get('prefilled_code', "")
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - ^
+2025-01-08 17:11:59 - ERROR - UnboundLocalError
+2025-01-08 17:11:59 - ERROR - :
+2025-01-08 17:11:59 - ERROR - cannot access local variable 'solutions' where it is not associated with a value

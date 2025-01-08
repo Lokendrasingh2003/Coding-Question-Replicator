@@ -35,9 +35,9 @@ ELSE question is FUNCTION BASED then
     2. Backend code file
 
     `Solution Code file` will contain solution function which is asked in question. If needed this function can be wrapped inside a class named solution for java it will be Solution.
-    `Backend Code file` will contain code to take input and call the function from Solution code file and then printing output into given output format.
+    `Backend Code file` will contain code to take input and call the function from Solution code file and then printing output into given output format. Make sure you add import statement in python code.
 
-    Once these two are done, create one more file, PREFILLED CODE, this will contain same structure as solution code file but you need to remove function body and any helper function, so that user can write solution on that template.
+    Once these two are done, create one more file, PREFILLED CODE, this will contain same structure as solution code file, but you need to remove function body and any helper function, so that user can write solution on that template.
 
     THERE IS ONE IMPORTANT NOTE WHEN writing BACKEND CODE FOR C:
     C-Backend code should be structured as follows
@@ -113,7 +113,7 @@ Alex needs to go from stair `0` to stair `N` in the least amount of time.
 He can either go up `X` steps in  `K` seconds or up `1` step in each move, which takes `1` second. 
 Implement the function `leastTimeToClimb` which will take `N`, `X` and `K` as arguments and return least time to reach `Nth` stair.
 
-*Note: You need not to write code to handle input and output.*
+*Note: You need not write code to handle input and output.*
 
 ---
 
