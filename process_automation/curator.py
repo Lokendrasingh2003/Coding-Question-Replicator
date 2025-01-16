@@ -1,8 +1,5 @@
 import os
 import json
-
-from weasyprint.css.validation.properties import content
-
 from .gpt_connect import ChatAgent
 from .json_to_csv_parser import Parser
 
