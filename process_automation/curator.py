@@ -26,12 +26,14 @@ class QuestionCurator:
 
             agent = ChatAgent(self.ENDPOINT, self.API_KEY, self.API_VERSION)
             response_testcases = agent.generate_testcases(self.MODEL_NAME, question)
+            # print(response_testcases)
 
             agent = ChatAgent(self.ENDPOINT, self.API_KEY, self.API_VERSION)
             validation_result = agent.validate_solutions(self.MODEL_NAME, question, response_solutions, response_testcases)
             try:
                 validation_result = json.loads(validation_result)
             except Exception as e:
+                print("!!! Invalid JSON in Validtion Results!!!")
                 print(validation_result)
                 continue
             
@@ -48,10 +50,18 @@ class QuestionCurator:
 
     def curate(self, question, filename="", difficulty='EASY', sub_topic='DATA_TYPE_LISTS'):
         agent = ChatAgent(self.ENDPOINT, self.API_KEY, self.API_VERSION)
-        curated_question = json.loads(agent.generate_question(self.MODEL_NAME, question))
+        gpt_response = agent.generate_question(self.MODEL_NAME, question)
+        try:
+            curated_question = json.loads(gpt_response)
+        except Exception as e:
+            print('!!! Invalid JSON in Question Curation !!!')
+            print(validation_result)
+            return
 
         response = self._generate_solutions(curated_question.get('content'))
         question_data = {}
+
+        # print(response)
 
         if response is not None:
             question_data[filename] = {
@@ -66,5 +76,5 @@ class QuestionCurator:
 
 
         print('Generating CSV')
-        self.PARSER.parse_into_coding_question_csv(question_data, filename, self.BASE_DIR)
+        self.PARSER.parse_into_coding_question_csv(question_data, filename, self.BASE_DIR, testcase_count=30)
             

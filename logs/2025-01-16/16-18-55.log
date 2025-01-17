@@ -1,0 +1,71 @@
+2025-01-16 16:18:55 - INFO - Working on Que 01 ...
+2025-01-16 16:18:55 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:18:59 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:18:59 - INFO - Question Curated
+2025-01-16 16:18:59 - INFO - ### Generate Fibonacci Sequence
+
+Write a program to generate the first `n` Fibonacci numbers.
+
+---
+
+#### Input Format
+- An integer `n` representing the number of Fibonacci numbers to generate.
+
+#### Output Format
+- A sequence of `n` space-separated Fibonacci numbers.
+
+---
+
+#### Constraints
+- 1 <= `n` <= 30
+
+---
+
+#### Example 1
+###### Input
+    5
+
+
+###### Output
+    0 1 1 2 3
+
+
+###### Explanation
+    For `n = 5`, the first five Fibonacci numbers are 0, 1, 1, 2, and 3, which form the output sequence.
+
+---
+2025-01-16 16:19:00 - INFO - Working on Que 02 ...
+2025-01-16 16:19:00 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:19:03 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:19:03 - INFO - Question Curated
+2025-01-16 16:19:03 - INFO - ### Squares of Natural Numbers
+
+Write a program to generate the squares of the first n natural numbers.
+
+---
+
+#### Input Format
+- An integer `n` representing the number of natural numbers for which squares are to be generated.
+
+#### Output Format
+- `n` space-separated integers representing the squares of the first `n` natural numbers.
+
+---
+
+#### Constraints
+- 1 <= `n` <= 1000
+
+---
+
+#### Example 1
+###### Input
+    5
+
+###### Output
+    1 4 9 16 25
+
+###### Explanation
+- The first 5 natural numbers are 1, 2, 3, 4, and 5.
+- Squaring these numbers, we get 1, 4, 9, 16, and 25, respectively.
+
+---

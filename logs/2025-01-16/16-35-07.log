@@ -1,0 +1,16 @@
+2025-01-16 16:35:07 - INFO - Working on Que 01 ...
+2025-01-16 16:35:07 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:35:11 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:35:11 - INFO - Question Curated
+2025-01-16 16:35:11 - INFO - {
+    "title": "Generate Fibonacci Sequence",
+    "content": "Write a program to generate first `n` Fibonacci numbers.\n\n---\n\n#### Input Format\n- The input consists of a single integer `n` representing the number of Fibonacci numbers to generate.\n\n#### Output Format\n- Output the first `n` Fibonacci numbers separated by spaces.\n\n---\n\n#### Constraints\n- `1 <= n <= 50`\n\n---\n\n#### Example 1\n###### Input\n\n    5\n\n###### Output\n\n    0 1 1 2 3\n\n###### Explanation\n    The first 5 Fibonacci numbers are 0, 1, 1, 2, and 3. The sequence starts with 0 and 1, and each subsequent number is the sum of the previous two numbers.\n\n---\n"
+}
+2025-01-16 16:35:11 - INFO - Working on Que 02 ...
+2025-01-16 16:35:11 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:35:14 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:35:14 - INFO - Question Curated
+2025-01-16 16:35:14 - INFO - {
+    "title": "First N Squares",
+    "content": "### First N Squares\n\nWrite a program to generate the squares of the first `n` natural numbers.\n\n---\n\n#### Input Format\n- A single integer `n` representing the number of natural numbers to square.\n\n#### Output Format\n- Output the squares of the first `n` natural numbers in a space-separated format.\n\n---\n\n#### Constraints\n- 1 <= `n` <= 100\n\n---\n\n#### Example 1\n###### Input\n    5\n\n###### Output\n    1 4 9 16 25\n\n###### Explanation\n    For n=5, the first 5 natural numbers are 1, 2, 3, 4, and 5. Their squares are 1, 4, 9, 16, and 25 respectively.\n\n---\n"
+}

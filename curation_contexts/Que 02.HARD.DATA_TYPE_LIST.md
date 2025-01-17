@@ -1,5 +1,15 @@
-Write a program to generate first squares of first n natural numbers
+Determine whether a string is a palindrome (reads the same forward and backward).
 
-Example 
-input  5
-output 1 4 9 16 25
+Example 1
+Input:
+t = 3
+n = 5
+s = madam  
+n = 5
+s = racer  
+n = 3
+s = ITI  
+Output:
+True
+False
+True

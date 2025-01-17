@@ -1,0 +1,707 @@
+2025-01-17 11:44:41 - INFO - Working on Que 01 ...
+2025-01-17 11:44:41 - INFO - Requesting GPT to Curate Question
+2025-01-17 11:44:45 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:44:45 - INFO - Question Curated
+2025-01-17 11:44:45 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:44:56 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:44:56 - INFO - Solutions generated
+2025-01-17 11:44:56 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:45:19 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:45:19 - INFO - Testcases generated
+2025-01-17 11:45:20 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:45:43 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:45:43 - INFO - Validation Failed.
+ [REASON]: The solutions provided do not match the instructions given in the question. The provided solutions in different languages are for removing duplicates from an array, while the question is about generating the first 'n' Fibonacci numbers.
+2025-01-17 11:45:43 - INFO - Retrying...
+2025-01-17 11:45:43 - INFO - Attempt 1/5
+2025-01-17 11:45:43 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:45:53 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:45:53 - INFO - Solutions generated
+2025-01-17 11:45:53 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:46:13 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:46:13 - INFO - Testcases generated
+2025-01-17 11:46:14 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:46:36 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:46:36 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases are not aligned. The solutions generate the first `n` Fibonacci numbers, while the test cases and expected outputs correspond to a different problem related to finding the next greater element. The provided test cases should be updated or corrected to match the problem statement about generating Fibonacci numbers.
+2025-01-17 11:46:36 - INFO - Attempt 2/5
+2025-01-17 11:46:37 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:46:46 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:46:46 - INFO - Solutions generated
+2025-01-17 11:46:47 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:47:02 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:47:02 - INFO - Testcases generated
+2025-01-17 11:47:02 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:47:29 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:47:29 - INFO - Validation Successful!
+2025-01-17 11:47:29 - INFO - Generating CSV
+2025-01-17 11:47:29 - INFO - CSV file D:\NxtWave\Coding-Question-Replicator\csv\Que 01.csv generated successfully.
+2025-01-17 11:47:29 - INFO - Working on Que 02 ...
+2025-01-17 11:47:30 - INFO - Requesting GPT to Curate Question
+2025-01-17 11:47:33 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:47:33 - INFO - Question Curated
+2025-01-17 11:47:34 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:47:40 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:47:40 - INFO - Solutions generated
+2025-01-17 11:47:41 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:48:19 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:48:19 - INFO - Testcases generated
+2025-01-17 11:48:19 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:49:08 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:49:08 - INFO - {
+    "result": "false",
+    "message": "The provided solutions and test cases do not align with the given question. The solutions are all about removing duplicates from arrays while the question is about calculating the squares of the first 'n' natural numbers.",
+    "solutions": {
+        "c": {
+            "solution_code": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    \n    for (int i = 1; i <= n; i++) {\n        printf(\"%d \", i * i);\n    }\n    printf(\"\\n\");\n    \n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <stdio.h>\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+        },
+        "cpp": {
+            "solution_code": "#include <iostream>\nusing namespace std;\n\nint main(){\n    int n;\n    cin >> n;\n    \n    for(int i = 1; i <= n; ++i) {\n        cout << (i * i) << \" \";\n    }\n    cout << endl;\n    \n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+        },
+        "java": {
+            "solution_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        \n        for(int i = 1; i <= n; i++) {\n            System.out.print((i * i) + \" \");\n        }\n        System.out.println();\n        \n        scanner.close();\n    }\n}\n",
+            "backend_code": "",
+            "prefilled_code": "import java.util.Scanner;\n \nclass Main {\n    public static void main(String[] args) {\n        //Write your code below\n    }\n}"
+        },
+        "python": {
+            "solution_code": "n = int(input())\nprint(' '.join(str(i * i) for i in range(1, n + 1)))\n",
+            "backend_code": "",
+            "prefilled_code": "#Write your code here\n"
+        }
+    },
+    "testcases": [
+        {
+            "input": "1",
+            "output": "1",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "2",
+            "output": "1 4",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "3",
+            "output": "1 4 9",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5",
+            "output": "1 4 9 16 25",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10",
+            "output": "1 4 9 16 25 36 49 64 81 100",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "15",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "20",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "25",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "30",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "40",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "50",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "100",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "200",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "300",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121 68644 69169 69696 70225 70756 71289 71824 72361 72900 73441 73984 74529 75076 75625 76176 76729 77284 77841 78400 78961 79524 80089 80656 81225 81796 82369 82944 83521 84100 84681 85264 85849 86436 87025 87616 88209 88804 89401 90000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "400",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121 68644 69169 69696 70225 70756 71289 71824 72361 72900 73441 73984 74529 75076 75625 76176 76729 77284 77841 78400 78961 79524 80089 80656 81225 81796 82369 82944 83521 84100 84681 85264 85849 86436 87025 87616 88209 88804 89401 90000 90601 91204 91809 92416 93025 93636 94249 94864 95481 96100 96721 97344 97969 98596 99225 99856 100489 101124 101761 102400 103041 103684 104329 104976 105625 106276 106929 107584 108241 108900 109561 110224 110889 111556 112225 112896 113569 114244 114921 115600 116281 116964 117649 118336 119025 119716 120409 121
+2025-01-17 11:49:08 - INFO - Retrying...
+2025-01-17 11:49:08 - INFO - Attempt 1/5
+2025-01-17 11:49:09 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:49:16 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:49:16 - INFO - Solutions generated
+2025-01-17 11:49:16 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:50:00 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:50:00 - INFO - Testcases generated
+2025-01-17 11:50:01 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:50:34 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:50:34 - INFO - {
+    "result": "false",
+    "message": "The given solutions and test cases do not match the requirements of the question. The solutions are intended to remove duplicates from an array while the question is about generating squares of the first n natural numbers.",
+    "solutions": {
+        "c": {
+            "solution_code": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    for (int i = 1; i <= n; i++) {\n        printf(\"%d\", i * i);\n        if (i != n) {\n            printf(\" \"); // print space except after the last number\n        }\n    }\n    printf(\"\\n\");\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <stdio.h>\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+        },
+        "cpp": {
+            "solution_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 1; i <= n; i++) {\n        cout << i * i;\n        if (i != n) {\n            cout << \" \"; // print space except after the last number\n        }\n    }\n    cout << endl;\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main()\n{\n     // Write your code here\n     return 0;\n}"
+        },
+        "java": {
+            "solution_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        for (int i = 1; i <= n; i++) {\n            System.out.print(i * i);\n            if (i != n) {\n                System.out.print(\" \"); // print space except after the last number\n            }\n        }\n        System.out.println();\n        scanner.close();\n    }\n}\n",
+            "backend_code": "",
+            "prefilled_code": "import java.util.Scanner;\n\nclass Main {\n    public static void main(String[] args) {\n        // Write your code below\n    }\n}"
+        },
+        "python": {
+            "solution_code": "n = int(input())\nresult = [str(i * i) for i in range(1, n + 1)]\nprint(\" \".join(result))\n",
+            "backend_code": "",
+            "prefilled_code": "# Write your code here"
+        }
+    },
+    "testcases": [
+        {
+            "input": "1",
+            "output": "1",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "2",
+            "output": "1 4",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "3",
+            "output": "1 4 9",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "4",
+            "output": "1 4 9 16",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5",
+            "output": "1 4 9 16 25",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "6",
+            "output": "1 4 9 16 25 36",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "7",
+            "output": "1 4 9 16 25 36 49",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "8",
+            "output": "1 4 9 16 25 36 49 64",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "9",
+            "output": "1 4 9 16 25 36 49 64 81",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10",
+            "output": "1 4 9 16 25 36 49 64 81 100",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "11",
+            "output": "1 4 9 16 25 36 49 64 81 100 121",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "12",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "13",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "14",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "15",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "20",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "25",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "30",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "50",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "75",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "100",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "150",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "200",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "250",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "500",
+            "output": "
+2025-01-17 11:50:34 - INFO - Attempt 2/5
+2025-01-17 11:50:34 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:50:39 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:50:39 - INFO - Solutions generated
+2025-01-17 11:50:40 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:51:15 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:51:15 - INFO - Testcases generated
+2025-01-17 11:51:15 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:52:00 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:52:00 - INFO - {
+  "result": "false",
+  "message": "The provided test cases do not align with the solutions and the described problem. The expected output in the provided cases does not match the expected pattern of squaring natural numbers. Hence, the test cases need to be corrected to comply with the problem statement.",
+  "solutions": {
+    "c": {
+      "solution_code": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    for(int i = 1; i <= n; i++) {\n        printf(\"%d \", i * i);\n    }\n    return 0;\n}\n",
+      "backend_code": "",
+      "prefilled_code": "#include <stdio.h>\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+    },
+    "cpp": {
+      "solution_code": "#include <iostream>\nusing namespace std;\n\nint main(){\n    int n;\n    cin >> n;\n    for(int i = 1; i <= n; i++) {\n        cout << i * i << \" \";\n    }\n    return 0;\n}\n",
+      "backend_code": "",
+      "prefilled_code": "#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main()\n{\n     //Write your code here\n     return 0;\n}"
+    },
+    "java": {
+      "solution_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        for(int i = 1; i <= n; i++) {\n            System.out.print(i * i + \" \");\n        }\n        scanner.close();\n    }\n}\n",
+      "backend_code": "",
+      "prefilled_code": "import java.util.Scanner;\n \nclass Main {\n    public static void main(String[] args) {\n        //Write your code below\n    }\n}"
+    },
+    "python": {
+      "solution_code": "n = int(input())\nsquares = [i * i for i in range(1, n + 1)]\nprint(' '.join(map(str, squares)))\n",
+      "backend_code": "",
+      "prefilled_code": "#Write your code here\n"
+    }
+  },
+  "testcases": [
+    {
+      "input": "1",
+      "output": "1",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "2",
+      "output": "1 4",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "3",
+      "output": "1 4 9",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "4",
+      "output": "1 4 9 16",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "5",
+      "output": "1 4 9 16 25",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "6",
+      "output": "1 4 9 16 25 36",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "7",
+      "output": "1 4 9 16 25 36 49",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "8",
+      "output": "1 4 9 16 25 36 49 64",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "9",
+      "output": "1 4 9 16 25 36 49 64 81",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "10",
+      "output": "1 4 9 16 25 36 49 64 81 100",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "11",
+      "output": "1 4 9 16 25 36 49 64 81 100 121",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "12",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "13",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "14",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "15",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "16",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "20",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "25",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "30",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "50",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "75",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "100",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "200",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "300",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121",
+      "testcase_type": "NORMAL_CASE"
+    },
+    {
+      "input": "500",
+      "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 566
+2025-01-17 11:52:00 - INFO - Attempt 3/5
+2025-01-17 11:52:00 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:52:05 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:52:05 - INFO - Solutions generated
+2025-01-17 11:52:06 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:52:38 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:52:38 - INFO - Testcases generated
+2025-01-17 11:52:39 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:53:10 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:53:10 - INFO - {
+    "result": "false",
+    "message": "The given solutions and test cases do not align with the question. These solutions and test cases are for a different question about removing duplicates from an array.",
+    "solutions": {
+        "c": {
+            "solution_code": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    for (int i = 1; i <= n; ++i) {\n        printf(\"%d \", i * i);\n    }\n    printf(\"\\n\");\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <stdio.h>\n\nint main() {\n    // write your code here\n    return 0;\n}\n"
+        },
+        "cpp": {
+            "solution_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 1; i <= n; ++i) {\n        cout << i * i << \" \";\n    }\n    cout << endl;\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // write your code here\n    return 0;\n}\n"
+        },
+        "java": {
+            "solution_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        for (int i = 1; i <= n; ++i) {\n            System.out.print((i * i) + \" \");\n        }\n        System.out.println();\n        scanner.close();\n    }\n}\n",
+            "backend_code": "",
+            "prefilled_code": "import java.util.Scanner;\n\nclass Main {\n    public static void main(String[] args) {\n        // write your code here\n    }\n}\n"
+        },
+        "python": {
+            "solution_code": "n = int(input())\nresult = [i * i for i in range(1, n + 1)]\nprint(' '.join(map(str, result)))\n",
+            "backend_code": "",
+            "prefilled_code": "# write your code here\n"
+        }
+    },
+    "testcases": [
+        {
+            "input": "1",
+            "output": "1",
+            "testcase_type": "VISIBLE_CASE"
+        },
+        {
+            "input": "2",
+            "output": "1 4",
+            "testcase_type": "VISIBLE_CASE"
+        },
+        {
+            "input": "3",
+            "output": "1 4 9",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "4",
+            "output": "1 4 9 16",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5",
+            "output": "1 4 9 16 25",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10",
+            "output": "1 4 9 16 25 36 49 64 81 100",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "20",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "50",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "100",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "200",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "500",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "1000",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121 68644 69169 69696 70225 70756 71289 71824 72361 72900 73441 73984 74529 75076 75625 76176 76729 77284 77841 78400 78961 79524 80089 80656 81225 81796 82369 82944 83521 84100 84681 85264 85849 86436 87025 87616 88209 88804 89401 90000 90601 91204 91809 92416 93025 93636 94249 94864 95481 96100 96721 97344 97969 98596 99225 99856 100489 101124 101761 102400 103041 103684 104329 104976 105625 106276 106929 107584 108241 108900 109561 110224 110889 111556 112225 112896 113569 114244 114921 115600 116281 116964 117649 118336 119025 119716 120409 121104 121801 122500 123201 123904 124609 125316 126025 126736 127449 128164 128881 129600 130321 131044 131769 132496 133225 133956 134689 135424 136161 136900 137641 138384 139129 139876 140625 141376 142129 142884 143641 144400 145161 145924 146689 147456 148225 148996 149769 150544 151321 152100 152881 153664 154449 155236 156025 156816 157609 158404 159201 160000 160801 161604 162409 163216 164025 164836 165649 166464 167281 168100 168921 169744 170569 171396 172225 173056 173889 174724 175561 176400 177241 178084 178929 179776 180625 181476 182329 183184 184041 184900 185761 186624 187489 188356 189225 190096 190969 191844 192721 193600 194481 195364 196249 197136 198025 198916 199809 200704 201601 202500 203401 204304 205209 206116 207025 207936 208849 209764 210681 211600 212521 213444 214369 215296 216225 217156 218089 219024 219961",
+            "testcase_type": "EDGE_CASE"
+        },
+        {
+            "input": "6",
+            "output": "1 4 9 16 25 36",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "7",
+            "output": "1 4 9 16 25 36 49",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "8",
+            "output": "1 4 9 16 25 36 49 64",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "9",
+            "output": "1 4 9 16 25 36 49 64 81",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "11",
+            "output": "1 4 9 16 25 36 49 64 81 100 121",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "12",
+            "output":
+2025-01-17 11:53:10 - INFO - Attempt 4/5
+2025-01-17 11:53:11 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:53:16 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:53:16 - INFO - Solutions generated
+2025-01-17 11:53:16 - INFO - Requesting GPT to generate test cases
+2025-01-17 11:53:49 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:53:49 - INFO - Testcases generated
+2025-01-17 11:53:49 - INFO - Requesting GPT to validate solutions
+2025-01-17 11:54:34 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:54:34 - INFO - {
+    "result": "false",
+    "message": "The solutions and test cases provided do not match the problem statement given. The problem statement is about generating squares of the first n natural numbers, but the solutions and test cases relate to removing duplicates from an array.",
+    "solutions": {
+        "c": {
+            "solution_code": "#include <stdio.h>\n\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    for (int i = 1; i <= n; i++) {\n        printf(\"%d \", i * i);\n    }\n    printf(\"\\n\");\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <stdio.h>\n\nint main() {\n    // Write your code here\n    return 0;\n}\n"
+        },
+        "cpp": {
+            "solution_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    for (int i = 1; i <= n; i++) {\n        cout << i * i << \" \";\n    }\n    cout << endl;\n    return 0;\n}\n",
+            "backend_code": "",
+            "prefilled_code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    // Write your code here\n    return 0;\n}\n"
+        },
+        "java": {
+            "solution_code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        for (int i = 1; i <= n; i++) {\n            System.out.print(i * i + \" \");\n        }\n        System.out.println();\n        scanner.close();\n    }\n}\n",
+            "backend_code": "",
+            "prefilled_code": "import java.util.Scanner;\n\nclass Main {\n    public static void main(String[] args) {\n        // Write your code here\n    }\n}\n"
+        },
+        "python": {
+            "solution_code": "n = int(input())\nprint(' '.join(str(i * i) for i in range(1, n + 1)))\n",
+            "backend_code": "",
+            "prefilled_code": "# Write your code here\n"
+        }
+    },
+    "testcases": [
+        {
+            "input": "1",
+            "output": "1",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "2",
+            "output": "1 4",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "3",
+            "output": "1 4 9",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "4",
+            "output": "1 4 9 16",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "5",
+            "output": "1 4 9 16 25",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "10",
+            "output": "1 4 9 16 25 36 49 64 81 100",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "15",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "20",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "25",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "30",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "50",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "80",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "100",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "200",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "300",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121 68644 69169 69696 70225 70756 71289 71824 72361 72900 73441 73984 74529 75076 75625 76176 76729 77284 77841 78400 78961 79524 80089 80656 81225 81796 82369 82944 83521 84100 84681 85264 85849 86436 87025 87616 88209 88804 89401 90000",
+            "testcase_type": "NORMAL_CASE"
+        },
+        {
+            "input": "400",
+            "output": "1 4 9 16 25 36 49 64 81 100 121 144 169 196 225 256 289 324 361 400 441 484 529 576 625 676 729 784 841 900 961 1024 1089 1156 1225 1296 1369 1444 1521 1600 1681 1764 1849 1936 2025 2116 2209 2304 2401 2500 2601 2704 2809 2916 3025 3136 3249 3364 3481 3600 3721 3844 3969 4096 4225 4356 4489 4624 4761 4900 5041 5184 5329 5476 5625 5776 5929 6084 6241 6400 6561 6724 6889 7056 7225 7396 7569 7744 7921 8100 8281 8464 8649 8836 9025 9216 9409 9604 9801 10000 10201 10404 10609 10816 11025 11236 11449 11664 11881 12100 12321 12544 12769 12996 13225 13456 13689 13924 14161 14400 14641 14884 15129 15376 15625 15876 16129 16384 16641 16900 17161 17424 17689 17956 18225 18496 18769 19044 19321 19600 19881 20164 20449 20736 21025 21316 21609 21904 22201 22500 22801 23104 23409 23716 24025 24336 24649 24964 25281 25600 25921 26244 26569 26896 27225 27556 27889 28224 28561 28900 29241 29584 29929 30276 30625 30976 31329 31684 32041 32400 32761 33124 33489 33856 34225 34596 34969 35344 35721 36100 36481 36864 37249 37636 38025 38416 38809 39204 39601 40000 40401 40804 41209 41616 42025 42436 42849 43264 43681 44100 44521 44944 45369 45796 46225 46656 47089 47524 47961 48400 48841 49284 49729 50176 50625 51076 51529 51984 52441 52900 53361 53824 54289 54756 55225 55696 56169 56644 57121 57600 58081 58564 59049 59536 60025 60516 61009 61504 62001 62500 63001 63504 64009 64516 65025 65536 66049 66564 67081 67600 68121 68644 69169 69696 70225 70756 71289 71824 72361 72900 73441 73984 74529 75076 75625 76176 76729 77284 77841 78400 78961 79524 80089 80656 81225 81796 82369 82944 83521 84100 84681 85264 85849 86436 87025 87616 88209 88804 89401 90000 90601 91204 91809 92416 93025 93636 94249 94864 95481 96100 96721 97344 97969 98596 99225 99856
+2025-01-17 11:54:34 - INFO - Attempt 5/5
+2025-01-17 11:54:35 - INFO - Requesting GPT to generate solutions
+2025-01-17 11:54:42 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 11:54:42 - INFO - Solutions generated
+2025-01-17 11:54:42 - INFO - Requesting GPT to generate test cases

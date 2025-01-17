@@ -103,9 +103,11 @@ Note: Explanation should explain how this output comes from given input without 
 
 Return the response in the json:
 Json Format:
-{
+{{
     "title": [QUESTION TITLE SAME AS USED IN QUESTION],
     "content" [CURATED QUESTION]
-}
+}}
 
-Make sure to return a valid json string which can be directly parsed.
+[IMPORTANT] Title of the question should always be there in problem text as defined in format.
+[IMPORTANT] Make sure title won't exceed 5-6 words
+[IMPORTANT] Your responses should only contain the json without any backtick or any kind of formatting. It should be a single json string which can be parsed into json directly.

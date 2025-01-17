@@ -80,4 +80,4 @@ INSTRUCTIONS:
         ```
     3. Make sure your response will be json string in the given format and which can be easily parsed to json object.
     [IMPORTANT] Your responses should only contain the json without any backtick or any kind of formatting. It should be a single json string which can be parsed into json directly.
-    [IMPOATANT] Make sure that the SHORT_TITLE in your response json is same as you used in Question.
+    [IMPORTANT] Make sure that the SHORT_TITLE in your response json is same as you used in Question.

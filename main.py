@@ -47,10 +47,10 @@ def get_contexts():
 if __name__ == '__main__':
     curator = QuestionCurator(API_KEY, END_POINT, MODEL_NAME, API_VERSION)
 
-    # for question_context in get_contexts():
-    #     if question_context.get('context').strip() != "":
-    #         print(f"Working on {question_context.get('file_name')} ...")
-    #         curator.curate(question_context.get('context'), question_context.get('file_name'), question_context.get('difficulty'), question_context.get('sub_topic'))
+    for question_context in get_contexts():
+        if question_context.get('context').strip() != "":
+            print(f"Working on {question_context.get('file_name')} ...")
+            curator.curate(question_context.get('context'), question_context.get('file_name'), question_context.get('difficulty'), question_context.get('sub_topic'))
 
     for i in range(3):
         winsound.Beep(1300, 400)

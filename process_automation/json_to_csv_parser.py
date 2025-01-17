@@ -6,7 +6,7 @@ class Parser:
     def __init__(self):
         pass
 
-    def parse_into_coding_question_csv(self, json_data, filename, base_dir):
+    def parse_into_coding_question_csv(self, json_data, filename, base_dir, testcase_count=10):
 
         lang_sequence = {
             "python": 0,
@@ -21,7 +21,7 @@ class Parser:
         for key in json_data.keys():
             sr_no += 1
             testcases = json_data[key]['testcases']
-            row = [[""]*(len(headers)) for _ in range(min(10,len(testcases))+2)]
+            row = [[""]*(len(headers)) for _ in range(min(testcase_count,len(testcases))+2)]
             row[0] = [f"{sr_no}", json_data[key].get('difficulty', 'EASY'), json_data[key].get('question', ""), json_data[key].get('short_text', ""), json_data[key].get('sub_topic', 'DATA_TYPE_LIST'), "", "", "", "", "", "", "", "", "", json_data[key].get('is_valid')]
 
             for k in json_data[key]['solutions'].keys():
@@ -38,7 +38,7 @@ class Parser:
                     row[lang_sequence[k]][13] = solutions.get('backend_code', "")
 
             testcases = json_data[key]['testcases']
-            for i in range(min(10,len(testcases))):
+            for i in range(min(testcase_count,len(testcases))):
                 row[i+1][9] = testcases[i].get('input', "")
                 row[i+1][10] = testcases[i].get('output', "")
                 row[i+1][11] = testcases[i].get('testcase_type', "")
