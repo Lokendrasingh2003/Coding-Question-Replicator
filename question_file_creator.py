@@ -2,7 +2,10 @@ import os
 import shutil
 
 def create(question_name, difficulty, sub_topic):
-    output_folder = "replication_questions"
+
+    os.makedirs('curation_contexts', exist_ok=True)
+
+    output_folder = "curation_contexts"
 
     if os.path.exists(output_folder):
         shutil.rmtree(output_folder)

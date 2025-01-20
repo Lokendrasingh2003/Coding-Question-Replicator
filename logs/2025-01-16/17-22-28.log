@@ -1,0 +1,68 @@
+2025-01-16 17:22:28 - INFO - Working on Que 01 ...
+2025-01-16 17:22:29 - INFO - Requesting GPT to Curate Question
+2025-01-16 17:22:32 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:22:32 - INFO - Question Curated
+2025-01-16 17:22:32 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:22:43 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:22:43 - INFO - Solutions generated
+2025-01-16 17:22:44 - INFO - Requesting GPT to generate test cases
+2025-01-16 17:23:17 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:23:17 - INFO - Testcases generated
+2025-01-16 17:23:17 - INFO - Requesting GPT to validate solutions
+2025-01-16 17:23:43 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:23:43 - INFO - Validation Failed.
+ [REASON]: The test cases provided do not align with the solutions provided and the question requirements. The solutions are generating the first n Fibonacci numbers, but the test cases have outputs that don't correspond to the Fibonacci sequence.
+2025-01-16 17:23:43 - INFO - Retrying...
+2025-01-16 17:23:43 - INFO - Attempt 1/5
+2025-01-16 17:23:43 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:23:52 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:23:52 - INFO - Solutions generated
+2025-01-16 17:23:52 - INFO - Requesting GPT to generate test cases
+2025-01-16 17:24:09 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:24:09 - INFO - Testcases generated
+2025-01-16 17:24:10 - INFO - Requesting GPT to validate solutions
+2025-01-16 17:24:40 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:24:40 - INFO - Validation Failed.
+ [REASON]: The given solutions and test cases do not align. The solutions are meant to generate the Fibonacci sequence, while the test cases provided reflect a different use case with an extra element and -1 in all outputs. The test cases should be adjusted to align with the question regarding Fibonacci sequence generation.
+2025-01-16 17:24:40 - INFO - Attempt 2/5
+2025-01-16 17:24:40 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:24:47 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:24:47 - INFO - Solutions generated
+2025-01-16 17:24:48 - INFO - Requesting GPT to generate test cases
+2025-01-16 17:25:06 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:25:06 - INFO - Testcases generated
+2025-01-16 17:25:07 - INFO - Requesting GPT to validate solutions
+2025-01-16 17:25:41 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:25:41 - INFO - Validation Failed.
+ [REASON]: The original solutions and test cases do not align with the Fibonacci sequence question. The test cases and solutions provided were for a different problem related to next greater element, hence the solutions and test cases need to be re-evaluated accordingly.
+2025-01-16 17:25:41 - INFO - Attempt 3/5
+2025-01-16 17:25:42 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:25:49 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:25:49 - INFO - Solutions generated
+2025-01-16 17:25:49 - INFO - Requesting GPT to generate test cases
+2025-01-16 17:26:07 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:26:07 - INFO - Testcases generated
+2025-01-16 17:26:07 - INFO - Requesting GPT to validate solutions
+2025-01-16 17:26:40 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:26:40 - INFO - Validation Failed.
+ [REASON]: The given solutions and test cases do not match the requirements of the output as specified by the problem statement. Specifically, the provided solutions do not output the required Fibonacci numbers correctly as the test cases' expected outputs are incorrect.
+2025-01-16 17:26:40 - INFO - Attempt 4/5
+2025-01-16 17:26:40 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:26:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:26:58 - INFO - Solutions generated
+2025-01-16 17:26:58 - INFO - Requesting GPT to generate test cases
+2025-01-16 17:27:17 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:27:17 - INFO - Testcases generated
+2025-01-16 17:27:18 - INFO - Requesting GPT to validate solutions
+2025-01-16 17:27:41 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:27:41 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases are for generating the first n Fibonacci numbers, but the initial given solution and test cases were for removing duplicates from an array. This discrepancy causes a failure in verification.
+2025-01-16 17:27:41 - INFO - ({'result': 'false', 'message': 'The provided solutions and test cases are for generating the first n Fibonacci numbers, but the initial given solution and test cases were for removing duplicates from an array. This discrepancy causes a failure in verification.', 'solutions': {'c': {'solution_code': '#include <stdio.h>\n\nint main() {\n    int n;\n    scanf("%d", &n);\n    \n    int fib[n];\n    fib[0] = 0;\n    if(n > 1) fib[1] = 1;\n    for(int i = 2; i < n; i++) {\n        fib[i] = fib[i - 1] + fib[i - 2];\n    }\n    \n    for(int i = 0; i < n; i++) {\n        if(i > 0) printf(" ");\n        printf("%d", fib[i]);\n    }\n    printf("\\n");\n    \n    return 0;\n}\n', 'backend_code': '', 'prefilled_code': '#include <stdio.h>\n\nint main()\n{\n     // Write your code here\n     return 0;\n}'}, 'cpp': {'solution_code': '#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    int n;\n    cin >> n;\n    \n    vector<int> fib(n);\n    fib[0] = 0;\n    if(n > 1) fib[1] = 1;\n    for(int i = 2; i < n; i++) {\n        fib[i] = fib[i - 1] + fib[i - 2];\n    }\n    \n    for(int i = 0; i < n; i++) {\n        if(i > 0) cout << " ";\n        cout << fib[i];\n    }\n    cout << endl;\n\n    return 0;\n}\n', 'backend_code': '', 'prefilled_code': '#include <iostream>\nusing namespace std;\n\nint main()\n{\n     // Write your code here\n     return 0;\n}'}, 'java': {'solution_code': 'import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n        int n = scanner.nextInt();\n        \n        int[] fib = new int[n];\n        fib[0] = 0;\n        if(n > 1) fib[1] = 1;\n        for(int i = 2; i < n; i++) {\n            fib[i] = fib[i - 1] + fib[i - 2];\n        }\n        \n        for(int i = 0; i < n; i++) {\n            if(i > 0) System.out.print(" ");\n            System.out.print(fib[i]);\n        }\n        System.out.println();\n        \n        scanner.close();\n    }\n}\n', 'backend_code': '', 'prefilled_code': 'import java.util.Scanner;\n \nclass Main {\n    public static void main(String[] args) {\n        // Write your code below\n    }\n}'}, 'python': {'solution_code': "n = int(input())\nfib = [0] * n\nif n > 0: fib[0] = 0\nif n > 1: fib[1] = 1\nfor i in range(2, n):\n    fib[i] = fib[i - 1] + fib[i - 2]\nprint(' '.join(map(str, fib)))\n", 'backend_code': '', 'prefilled_code': '# Write your code here\n'}}, 'testcases': [{'input': '1', 'output': '0', 'testcase_type': 'VISIBLE_CASE'}, {'input': '2', 'output': '0 1', 'testcase_type': 'VISIBLE_CASE'}, {'input': '3', 'output': '0 1 1', 'testcase_type': 'NORMAL_CASE'}, {'input': '4', 'output': '0 1 1 2', 'testcase_type': 'NORMAL_CASE'}, {'input': '5', 'output': '0 1 1 2 3', 'testcase_type': 'NORMAL_CASE'}, {'input': '6', 'output': '0 1 1 2 3 5', 'testcase_type': 'NORMAL_CASE'}, {'input': '7', 'output': '0 1 1 2 3 5 8', 'testcase_type': 'NORMAL_CASE'}, {'input': '8', 'output': '0 1 1 2 3 5 8 13', 'testcase_type': 'NORMAL_CASE'}, {'input': '9', 'output': '0 1 1 2 3 5 8 13 21', 'testcase_type': 'NORMAL_CASE'}, {'input': '10', 'output': '0 1 1 2 3 5 8 13 21 34', 'testcase_type': 'NORMAL_CASE'}, {'input': '11', 'output': '0 1 1 2 3 5 8 13 21 34 55', 'testcase_type': 'NORMAL_CASE'}, {'input': '12', 'output': '0 1 1 2 3 5 8 13 21 34 55 89', 'testcase_type': 'NORMAL_CASE'}, {'input': '13', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144', 'testcase_type': 'NORMAL_CASE'}, {'input': '14', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233', 'testcase_type': 'NORMAL_CASE'}, {'input': '15', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377', 'testcase_type': 'NORMAL_CASE'}, {'input': '16', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610', 'testcase_type': 'NORMAL_CASE'}, {'input': '17', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987', 'testcase_type': 'NORMAL_CASE'}, {'input': '18', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597', 'testcase_type': 'NORMAL_CASE'}, {'input': '19', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584', 'testcase_type': 'NORMAL_CASE'}, {'input': '20', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181', 'testcase_type': 'NORMAL_CASE'}, {'input': '21', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765', 'testcase_type': 'NORMAL_CASE'}, {'input': '22', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946', 'testcase_type': 'NORMAL_CASE'}, {'input': '23', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711', 'testcase_type': 'NORMAL_CASE'}, {'input': '24', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657', 'testcase_type': 'NORMAL_CASE'}, {'input': '25', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368', 'testcase_type': 'NORMAL_CASE'}, {'input': '26', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025', 'testcase_type': 'NORMAL_CASE'}, {'input': '27', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393', 'testcase_type': 'NORMAL_CASE'}, {'input': '28', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393 196418', 'testcase_type': 'NORMAL_CASE'}, {'input': '29', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393 196418 317811', 'testcase_type': 'NORMAL_CASE'}, {'input': '30', 'output': '0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393 196418 317811 514229', 'testcase_type': 'NORMAL_CASE'}]}, 'false')
+2025-01-16 17:27:41 - INFO - Working on Que 02 ...
+2025-01-16 17:27:42 - INFO - Requesting GPT to Curate Question
+2025-01-16 17:27:45 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:27:45 - INFO - Question Curated
+2025-01-16 17:27:45 - INFO - Requesting GPT to generate solutions
+2025-01-16 17:27:50 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 17:27:50 - INFO - Solutions generated
+2025-01-16 17:27:50 - INFO - Requesting GPT to generate test cases

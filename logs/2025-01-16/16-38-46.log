@@ -1,0 +1,44 @@
+2025-01-16 16:38:46 - INFO - Working on Que 01 ...
+2025-01-16 16:38:47 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:38:51 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:38:51 - INFO - Question Curated
+2025-01-16 16:38:51 - INFO - {'title': 'Generate Fibonacci Sequence', 'content': '### Generate Fibonacci Sequence\n\nWrite a program to generate the first `n` Fibonacci numbers.\n\n---\n\n#### Input Format\n- An integer `n` representing the number of Fibonacci numbers to generate.\n\n#### Output Format\n- A sequence of `n` Fibonacci numbers separated by space.\n\n---\n\n#### Constraints\n- 1 <= `n` <= 50\n\n---\n\n#### Example 1\n###### Input\n```\n5\n```\n\n###### Output\n```\n0 1 1 2 3\n```\n\n###### Explanation\n- The first 5 numbers in the Fibonacci sequence are 0, 1, 1, 2, and 3. The sequence starts with 0 and 1, and each subsequent number is the sum of the previous two.'}
+2025-01-16 16:38:51 - INFO - Requesting GPT to generate solutions
+2025-01-16 16:38:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:38:58 - INFO - Solutions generated
+2025-01-16 16:38:58 - INFO - Requesting GPT to generate test cases
+2025-01-16 16:39:16 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:39:16 - INFO - Testcases generated
+2025-01-16 16:39:16 - INFO - Requesting GPT to validate solutions
+2025-01-16 16:39:42 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:39:42 - INFO - Validation Successful!
+2025-01-16 16:39:42 - ERROR - Traceback (most recent call last):
+2025-01-16 16:39:42 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\main.py", line 53, in <module>
+2025-01-16 16:39:42 - ERROR - curator.curate(question_context.get('context'), question_context.get('file_name'), question_context.get('difficulty'), question_context.get('sub_topic'))
+2025-01-16 16:39:42 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\curator.py", line 59, in curate
+2025-01-16 16:39:42 - ERROR - response = json.loads(response)
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - ^
+2025-01-16 16:39:42 - ERROR - File "D:\Compilers\Program Files\Python312\Lib\json\__init__.py", line 339, in loads
+2025-01-16 16:39:42 - ERROR - raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+2025-01-16 16:39:42 - ERROR - TypeError
+2025-01-16 16:39:42 - ERROR - :
+2025-01-16 16:39:42 - ERROR - the JSON object must be str, bytes or bytearray, not tuple

@@ -1,0 +1,76 @@
+2025-01-17 12:48:03 - INFO - Working on Que 01 ...
+2025-01-17 12:48:03 - INFO - Requesting GPT to Curate Question
+2025-01-17 12:48:07 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:48:07 - INFO - Question Curated
+2025-01-17 12:48:08 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:48:19 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:48:19 - INFO - Solutions generated
+2025-01-17 12:48:19 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:48:34 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:48:34 - INFO - Testcases generated
+2025-01-17 12:48:34 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:49:06 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:49:06 - INFO - Validation Failed.
+ [REASON]: The provided solutions and testcases do not correspond to the given question about binary search. The solutions and testcases appear to be addressing a different problem, namely removing duplicates from an array.
+2025-01-17 12:49:06 - INFO - Retrying...
+2025-01-17 12:49:06 - INFO - Attempt 1/5
+2025-01-17 12:49:06 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:49:15 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:49:15 - INFO - Solutions generated
+2025-01-17 12:49:16 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:49:30 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:49:30 - INFO - Testcases generated
+2025-01-17 12:49:30 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:49:53 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:49:53 - INFO - Validation Failed.
+ [REASON]: The provided solutions in the four languages (C, C++, Java, Python) are incorrect as the implementation of remove_duplicates function does not align with the provided question. The question is about implementing binary search but the solutions provided are for removing duplicates.
+2025-01-17 12:49:53 - INFO - Attempt 2/5
+2025-01-17 12:49:53 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:50:04 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:50:04 - INFO - Solutions generated
+2025-01-17 12:50:05 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:50:28 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:50:28 - INFO - Testcases generated
+2025-01-17 12:50:29 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:50:52 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:50:52 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases do not match the question. The solutions are designed to remove duplicates from a list whereas the question involves finding the position of a target in a sorted list using binary search.
+2025-01-17 12:50:52 - INFO - Attempt 3/5
+2025-01-17 12:50:52 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:51:04 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:51:04 - INFO - Solutions generated
+2025-01-17 12:51:04 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:51:18 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:51:18 - INFO - Testcases generated
+2025-01-17 12:51:18 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:51:40 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:51:40 - INFO - Validation Successful!
+2025-01-17 12:51:40 - INFO - Generating CSV
+2025-01-17 12:51:40 - INFO - CSV file D:\NxtWave\Coding-Question-Replicator\csv\Que 01.csv generated successfully.
+2025-01-17 12:51:40 - INFO - Working on Que 02 ...
+2025-01-17 12:51:41 - INFO - Requesting GPT to Curate Question
+2025-01-17 12:51:44 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:51:44 - INFO - Question Curated
+2025-01-17 12:51:45 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:51:55 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:51:55 - INFO - Solutions generated
+2025-01-17 12:51:55 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:52:04 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:52:04 - INFO - Testcases generated
+2025-01-17 12:52:05 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:52:19 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:52:19 - INFO - Validation Failed.
+ [REASON]: The provided solutions and testcases do not align with the problem statement. The solutions and testcases are referring to different problems. The solutions seem to be about removing duplicates in arrays while the problem statement is about checking for palindromes.
+2025-01-17 12:52:19 - INFO - Retrying...
+2025-01-17 12:52:19 - INFO - Attempt 1/5
+2025-01-17 12:52:20 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:52:29 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:52:29 - INFO - Solutions generated
+2025-01-17 12:52:30 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:52:41 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:52:41 - INFO - Testcases generated
+2025-01-17 12:52:41 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:52:59 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:52:59 - INFO - Validation Successful!
+2025-01-17 12:52:59 - INFO - Generating CSV
+2025-01-17 12:52:59 - INFO - CSV file D:\NxtWave\Coding-Question-Replicator\csv\Que 02.csv generated successfully.

@@ -1,0 +1,10 @@
+2025-01-16 16:35:53 - INFO - Working on Que 01 ...
+2025-01-16 16:35:54 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:35:57 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:35:57 - INFO - Question Curated
+2025-01-16 16:35:57 - INFO - {'title': 'Fibonacci Sequence Generator', 'content': 'Write a program to generate the first `n` Fibonacci numbers. The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence starts as 0, 1, 1, 2, 3, 5, 8, and so on.\n\n---\n\n#### Input Format\n- An integer `n` representing the number of Fibonacci numbers to generate.\n\n#### Output Format\n- A single line containing the first `n` Fibonacci numbers separated by spaces.\n\n---\n\n####Constraints\n- 1 <= `n` <= 30\n\n---\n\n#### Example 1\n###### Input\n```\n5\n```\n\n###### Output\n```\n0 1 1 2 3\n```\n\n###### Explanation\n- The first 5 Fibonacci numbers are 0, 1, 1, 2, and 3.'}
+2025-01-16 16:35:57 - INFO - Working on Que 02 ...
+2025-01-16 16:35:57 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:36:00 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:36:00 - INFO - Question Curated
+2025-01-16 16:36:00 - INFO - {'title': 'Squares of Natural Numbers', 'content': '### Squares of Natural Numbers\n\nWrite a program to generate the squares of the first `n` natural numbers.\n\n---\n\n#### Input Format\n- An integer `n` representing the number of natural numbers.\n\n#### Output Format\n- `n` space-separated integers representing the squares of the first `n` natural numbers.\n\n---\n\n#### Constraints\n- 1 <= `n` <= 1000\n\n---\n\n#### Example 1\n###### Input\n    5\n\n###### Output\n    1 4 9 16 25\n\n###### Explanation\n    The squares of the first 5 natural numbers are calculated as follows:\n    1^2 = 1, 2^2 = 4, 3^2 = 9, 4^2 = 16, and 5^2 = 25. These results are printed as space-separated values.\n\n---'}

@@ -1,0 +1,20 @@
+2025-01-16 16:11:48 - INFO - Working on Que 01 ...
+2025-01-16 16:11:49 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:11:55 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:11:55 - INFO - Question Curated
+2025-01-16 16:11:55 - INFO - ```json
+{
+    "title": "Generate Fibonacci Numbers",
+    "content": "### Generate Fibonacci Numbers\n\nWrite a program to generate the first `n` Fibonacci numbers. The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones, typically starting with 0 and 1.\n\n---\n\n#### Input Format\n- A single integer `n` representing the number of Fibonacci numbers to generate.\n\n#### Output Format\n- A sequence of `n` space-separated integers representing the Fibonacci numbers.\n\n---\n\n#### Constraints\n- 1 <= `n` <= 50\n\n---\n\n#### Example 1\n###### Input\n```\n5\n```\n\n###### Output\n```\n0 1 1 2 3\n```\n\n###### Explanation\n- The first 5 Fibonacci numbers are `0, 1, 1, 2, and 3`.\n\n---"
+}
+```
+2025-01-16 16:11:55 - INFO - Working on Que 02 ...
+2025-01-16 16:11:55 - INFO - Requesting GPT to Curate Question
+2025-01-16 16:11:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 16:11:58 - INFO - Question Curated
+2025-01-16 16:11:58 - INFO - ```json
+{
+    "title": "Squares of Natural Numbers",
+    "content": "###Squares of Natural Numbers\n\nWrite a program to generate the squares of the first `n` natural numbers.\n\n---\n\n#### Input Format\n- A single integer `n` representing the number of first natural numbers whose squares need to be generated.\n\n#### Output Format\n- `n` space-separated integers representing the squares of the first `n` natural numbers.\n\n---\n\n#### Constraints\n- 1 <= `n` <= 1000\n\n---\n\n#### Example 1\n###### Input\n    5\n###### Output\n    1 4 9 16 25\n\n###### Explanation\n- The squares of the first 5 natural numbers (1, 2, 3, 4, 5) are calculated and displayed: 1^2 = 1, 2^2 = 4, 3^2 = 9, 4^2 = 16, and 5^2 = 25.\n\n---"
+}
+```

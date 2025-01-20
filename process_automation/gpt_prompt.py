@@ -23,11 +23,15 @@ class Prompt:
         with open(os.path.join(self.BASE_DIR, 'prompts', 'validate_solution.txt'), 'r') as f:
             return f.read().format(QUESTION=question, SOLUTIONS=solutions, TESTCASES=testcases)
 
+    def prompt_for_question(self, context):
+        with open(os.path.join(self.BASE_DIR, 'prompts', 'generate_question.txt'), 'r') as f:
+            return f.read().format(question_context=context)
 
 if __name__ == "__main__":
     prompt = Prompt()
     print('Testing...')
-    print(prompt.prompt_for_solution("Given a list of numbers, find the maximum subarray sum"), '\n')
-    print(prompt.prompt_for_testcases("Given a list of numbers, find the maximum subarray sum"), '\n')
-    print(prompt.prompt_for_variants("Given a list of numbers, find the maximum subarray sum"), '\n')
-    print(prompt.prompt_for_validation("Given a list of numbers, find the maximum subarray sum", "SOLUTIONS", "TESTCASES"))
+    print(prompt.prompt_for_question('CONTEXT'))
+    # print(prompt.prompt_for_solution("Given a list of numbers, find the maximum subarray sum"), '\n')
+    # print(prompt.prompt_for_testcases("Given a list of numbers, find the maximum subarray sum"), '\n')
+    # print(prompt.prompt_for_variants("Given a list of numbers, find the maximum subarray sum"), '\n')
+    # print(prompt.prompt_for_validation("Given a list of numbers, find the maximum subarray sum", "SOLUTIONS", "TESTCASES"))
