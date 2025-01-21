@@ -55,7 +55,7 @@ class QuestionCurator:
             curated_question = json.loads(gpt_response)
         except Exception as e:
             print('!!! Invalid JSON in Question Curation !!!')
-            print(validation_result)
+            print(gpt_response)
             return
 
         response = self._generate_solutions(curated_question.get('content'))
