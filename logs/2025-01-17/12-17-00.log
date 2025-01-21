@@ -1,0 +1,15 @@
+2025-01-17 12:17:00 - INFO - Working on Que 01 ...
+2025-01-17 12:17:01 - INFO - Requesting GPT to Curate Question
+2025-01-17 12:17:06 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:17:06 - INFO - Question Curated
+2025-01-17 12:17:06 - INFO - Requesting GPT to generate solutions
+2025-01-17 12:17:21 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:17:21 - INFO - Solutions generated
+2025-01-17 12:17:22 - INFO - Requesting GPT to generate test cases
+2025-01-17 12:17:35 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:17:35 - INFO - Testcases generated
+2025-01-17 12:17:35 - INFO - Requesting GPT to validate solutions
+2025-01-17 12:17:58 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-17 12:17:58 - INFO - Validation Successful!
+2025-01-17 12:17:58 - INFO - Generating CSV
+2025-01-17 12:17:58 - INFO - CSV file D:\NxtWave\Coding-Question-Replicator\csv\Que 01.csv generated successfully.

@@ -78,3 +78,19 @@ class ChatAgent:
         print("Question Replicated")
         return completion.choices[0].message.content
 
+    def generate_question(self, model, question):
+
+        print("\nRequesting GPT to Curate Question")
+
+
+        completion = self.client.chat.completions.create(
+            model=model,
+            messages=[
+                {
+                    "role": "user",
+                    "content": self.prompt.prompt_for_question(question),
+                }
+            ]
+        )
+        print("Question Curated")
+        return completion.choices[0].message.content

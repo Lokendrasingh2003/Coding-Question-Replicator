@@ -1,0 +1,90 @@
+2025-01-16 18:19:36 - INFO - Working on Que 01 ...
+2025-01-16 18:19:37 - INFO - Requesting GPT to Curate Question
+2025-01-16 18:19:40 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:19:40 - INFO - Question Curated
+2025-01-16 18:19:40 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:19:53 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:19:53 - INFO - Solutions generated
+2025-01-16 18:19:53 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:20:08 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:20:08 - INFO - Testcases generated
+2025-01-16 18:20:08 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:20:41 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:20:41 - INFO - Validation Failed.
+ [REASON]: Mismatch between provided test case outputs and algorithmically generated outputs.
+2025-01-16 18:20:41 - INFO - Retrying...
+2025-01-16 18:20:41 - INFO - Attempt 1/5
+2025-01-16 18:20:42 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:20:52 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:20:52 - INFO - Solutions generated
+2025-01-16 18:20:52 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:21:11 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:21:11 - INFO - Testcases generated
+2025-01-16 18:21:11 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:21:36 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:21:36 - INFO - Validation Failed.
+ [REASON]: Test inputs and outputs provided in the initial validation did not align with the new Fibonacci question. The solutions and test cases do not correspond to each other; the solutions are for removing duplicates from an array, while the question and test cases are about generating Fibonacci numbers.
+2025-01-16 18:21:36 - INFO - Attempt 2/5
+2025-01-16 18:21:36 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:21:45 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:21:45 - INFO - Solutions generated
+2025-01-16 18:21:45 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:22:07 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:22:07 - INFO - Testcases generated
+2025-01-16 18:22:07 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:22:48 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:22:48 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases do not match the question. The solution codes in different languages are for removing duplicates from an array, not for generating Fibonacci numbers.
+2025-01-16 18:22:48 - INFO - Attempt 3/5
+2025-01-16 18:22:48 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:22:55 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:22:55 - INFO - Solutions generated
+2025-01-16 18:22:56 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:23:11 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:23:11 - INFO - Testcases generated
+2025-01-16 18:23:11 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:23:34 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:23:34 - INFO - Validation Successful!
+2025-01-16 18:23:34 - INFO - Generating CSV
+2025-01-16 18:23:34 - ERROR - Traceback (most recent call last):
+2025-01-16 18:23:34 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\main.py", line 53, in <module>
+2025-01-16 18:23:34 - ERROR - curator.curate(question_context.get('context'), question_context.get('file_name'), question_context.get('difficulty'), question_context.get('sub_topic'))
+2025-01-16 18:23:34 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\curator.py", line 73, in curate
+2025-01-16 18:23:34 - ERROR - self.PARSER.parse_into_coding_question_csv(question_data, filename, self.BASE_DIR)
+2025-01-16 18:23:34 - ERROR - File "D:\NxtWave\Coding-Question-Replicator\process_automation\json_to_csv_parser.py", line 27, in parse_into_coding_question_csv
+2025-01-16 18:23:34 - ERROR - for k in json_data[key]['solutions'].keys():
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - ^
+2025-01-16 18:23:34 - ERROR - AttributeError
+2025-01-16 18:23:34 - ERROR - :
+2025-01-16 18:23:34 - ERROR - 'list' object has no attribute 'keys'

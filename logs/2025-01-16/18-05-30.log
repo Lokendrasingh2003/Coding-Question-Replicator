@@ -1,0 +1,39 @@
+2025-01-16 18:05:30 - INFO - Working on Que 01 ...
+2025-01-16 18:05:30 - INFO - Requesting GPT to Curate Question
+2025-01-16 18:05:33 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:05:33 - INFO - Question Curated
+2025-01-16 18:05:33 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:05:41 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:05:41 - INFO - Solutions generated
+2025-01-16 18:05:41 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:06:00 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:06:00 - INFO - Testcases generated
+2025-01-16 18:06:00 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:06:26 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:06:26 - INFO - Validation Failed.
+ [REASON]: The provided solutions and test cases do not align with the correct question. The solutions' purpose and the test cases are unrelated. Correct solutions for generating Fibonacci sequence and updated test cases for the given question are provided below.
+2025-01-16 18:06:26 - INFO - Retrying...
+2025-01-16 18:06:26 - INFO - Attempt 1/5
+2025-01-16 18:06:27 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:06:33 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:06:33 - INFO - Solutions generated
+2025-01-16 18:06:34 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:06:48 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:06:48 - INFO - Testcases generated
+2025-01-16 18:06:48 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:07:21 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:07:21 - INFO - Validation Failed.
+ [REASON]: The solutions provided for the question do not match the expected output format or logic of the provided test cases, which seem to be designed for generating the next greater element instead of Fibonacci sequence.
+2025-01-16 18:07:21 - INFO - Attempt 2/5
+2025-01-16 18:07:21 - INFO - Requesting GPT to generate solutions
+2025-01-16 18:07:29 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:07:29 - INFO - Solutions generated
+2025-01-16 18:07:29 - INFO - Requesting GPT to generate test cases
+2025-01-16 18:08:25 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:08:25 - INFO - Testcases generated
+2025-01-16 18:08:25 - INFO - Requesting GPT to validate solutions
+2025-01-16 18:08:50 - INFO - HTTP Request: POST https://nw-tech-dev.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-01 "HTTP/1.1 200 OK"
+2025-01-16 18:08:50 - INFO - Validation Failed.
+ [REASON]: Test cases do not align with the given question. The question is to generate the first 'n' Fibonacci numbers, but the provided test cases and expected outputs have no relation to the problem statement about generating Fibonacci sequence.
+2025-01-16 18:08:50 - INFO - Attempt 3/5
+2025-01-16 18:08:50 - INFO - Requesting GPT to generate solutions

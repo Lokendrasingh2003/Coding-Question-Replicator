@@ -53,7 +53,7 @@ NOTE 3: Testcase type should be one of the following names:
         2. EDGE_CASE
 
 [!!IMPORTANT NOTE]
-HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or output untill it is asked in question.
+HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or output until it is asked in question.
     FOR EXAMPLE: your response SHOULD NOT CONTAIN SUCH INPUT OUTPUTS:
         {
             "input": "100\n" + " ".join(str(x) for x in list(range(1, 51)) + list(range(1, 51))),
@@ -64,6 +64,7 @@ HIGHEST PRIORITY NOTE: Input should not contain any code as part of input or out
 
 IMPORTANT NOTE:BEFORE RESPONDING CHECK WHETHER INPUT AND OUTPUTS ARE AS PER GIVEN INSTRUCTIONS OR NOT. IF NOT THEN CORRECT THEM.
 NOTE: MAKE SURE YOU HAVE GIVEN 30 TESTCASES.
+NOTE: Make Sure the response is complete and is a valid json. If response is getting big then you can decrease testcase size so that response will be complete json.
 
 BELOW IS THE QUESTION FOR WHICH YOUR ARE SUPPOSED TO GENERATE TESTCASES ACCORDING TO ABOVE DESCRIPTION:
 
