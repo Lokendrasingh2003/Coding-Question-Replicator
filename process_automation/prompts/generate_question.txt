@@ -5,6 +5,7 @@ QUESTION_CONTEXT:
 
 
 Understand the given context and analyze given example input and output.
+if there any note regarding make function based or non-function based, so just do one thing if the note related to function-based then just add in the question that line `implement a function` and if the note is related to non-function based then do add this line in question text `create a program`.
 Frame the question Markdown based on the below MARKDOWN Format.
 
 ```
