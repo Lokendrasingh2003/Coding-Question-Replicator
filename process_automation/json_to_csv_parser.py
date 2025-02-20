@@ -6,13 +6,14 @@ class Parser:
     def __init__(self):
         pass
 
-    def parse_into_coding_question_csv(self, json_data, filename, base_dir, testcase_count=10):
+    def parse_into_coding_question_csv(self, json_data, filename, base_dir, testcase_count=15):
 
         lang_sequence = {
             "python": 0,
             "java": 1,
             "cpp": 2,
             "c": 3,
+            "C_SHARP":4,
         }
 
         headers = ["S. No",	"Difficulty", "Question Content (in Markdown)",	"Question_short_text", "Sub_Topics", "Code_language", "Solution Code", "Front_Code_language", "Prefilled Code For Each Code Language", "Test_case_input", "Test_case_output", "Test_case_type",	"Code_language", "Backend Code", "is_valid"]
@@ -26,7 +27,7 @@ class Parser:
 
             for k in json_data[key]['solutions'].keys():
                 solutions = json_data[key].get('solutions').get(k)
-                if k == "python":
+                if k in ["python", "cpp"]:
                     row[lang_sequence[k]][5] = str(k).upper()
                     row[lang_sequence[k]][6] = solutions.get('solution_code', "")
 
@@ -50,5 +51,5 @@ class Parser:
             writer = csv.writer(csvfile)
             writer.writerow(headers)
             writer.writerows(rows)
-            print(f"CSV file {os.path.join(os.path.dirname(base_dir), 'csv', f"{filename}.csv")} generated successfully.")
+            # print(f"CSV file {os.path.join(os.path.dirname(base_dir), 'csv', f"{filename}.csv")}generated successfully.")
 
