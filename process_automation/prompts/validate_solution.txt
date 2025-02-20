@@ -28,7 +28,10 @@ SOLUTION FORMAT:
                 "backend_code": "if __name__ == \"__main__\":\n    import sys\n    input = sys.stdin.read\n    data = input().strip().split()\n    n = int(data[0])\n    arr = list(map(int, data[1:]))\n    result = remove_duplicates(arr)\n    print(\" \".join(map(str, result)))\n",
                 "prefilled_code": "def remove_duplicates(arr):\n    # Fill this function in\n    pass"
             }}
-        }}
+        }},
+            "C_SHARP":{{
+                Same as java
+            }}
 
 
 TESTCASE FORMAT:
